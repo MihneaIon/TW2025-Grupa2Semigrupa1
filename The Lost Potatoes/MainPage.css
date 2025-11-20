@@ -1,0 +1,69 @@
+/*______Stilizare Sidebar De Naviare______*/
+
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+#header_navigation * {
+  height: 80px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav li a:hover {
+  text-shadow: 1px 1px 2px aqua;
+  color: gray;
+}
+
+nav li:first-child a {
+  color: rgb(207, 139, 12);
+}
+
+.page_navigation ul li {
+  white-space: nowrap;
+}
+
+.page_navigation ul li {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.page_navigation ul {
+  list-style-type: none;
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+#header_navigation {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content_container {
+  width: fit-content;
+  margin: auto;
+}
+
+#navigation_sidebar {
+  /*Setare Bara De Navigare Sa Se Miste In Timp Ce Scrollam*/
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+
+/*Stilizarea Sectiuni Ce Include Motto-ul*/
+.aesthetic_motto_section {
+  background: radial-gradient(rgb(255, 178, 35), rgb(255, 255, 0));
+  height: 3000px;
+}
