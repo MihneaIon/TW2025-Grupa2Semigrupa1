@@ -1,4 +1,9 @@
-/*______Stilizare Sidebar De Naviare______*/
+/*!!!!!!!!!!!!!!!!Indeparteaza Marginea Automata body!!!!!!!!!!!!!!!!*/
+body {
+  margin: 0;
+}
+
+/*________________________Stilizare Sidebar De Naviare________________________*/
 
 * {
   font-family: "Open Sans", Arial, sans-serif;
@@ -31,6 +36,7 @@ nav li:first-child a {
 
 .page_navigation ul li {
   padding-top: 30px;
+  /*Paddingul Sa Nu Afecteze Inaltimea Sidebarului*/
   box-sizing: border-box;
 }
 
@@ -60,10 +66,85 @@ nav li:first-child a {
   background-color: white;
   position: sticky;
   top: 0px;
+  /*Creare Bordura Fina Sub Sidebar De Navigare*/
+  border-bottom: 1px solid brown;
 }
 
-/*Stilizarea Sectiuni Ce Include Motto-ul*/
-.aesthetic_motto_section {
-  background: radial-gradient(rgb(255, 178, 35), rgb(255, 255, 0));
-  height: 3000px;
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
+
+/*Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body*/
+#page_content {
+  box-sizing: border-box;
+  min-width: fit-content;
 }
+
+#laitmotiv_pagina {
+  background: radial-gradient(rgb(255, 178, 35), rgb(255, 255, 0));
+  height: fit-content;
+  /*Pentru A Evita Distanta Nedorita Cu Bara De Navigare Din Cauza Pozitiei Lipicioase*/
+  overflow: hidden;
+}
+
+#laitmotiv_pagina * {
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+}
+
+/*Stilizare Generala*/
+
+h1 {
+  font-size: 60px;
+}
+
+.motto1 h1,
+.motto2 h1 {
+  margin: 0;
+}
+
+.motto1 h1 {
+  font-weight: 500;
+}
+
+#motto_enroll h4 {
+  color: rgb(49, 46, 46);
+}
+
+.get_started button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+  background-color: white;
+}
+
+.get_started button a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*Grupare Cutii In Flexboxuri*/
+#motto_enroll {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 5%;
+}
+
+.aesthetic_motto_section figure img {
+  width: 60%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.aesthetic_motto_section {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 80%;
+  margin-left: 20%;
+}
+
+/*_______________________Stilizare Sectiune Video De Prezentare Si Prezentare_______________________*/
