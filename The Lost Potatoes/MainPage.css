@@ -108,7 +108,7 @@ h1 {
   color: rgb(49, 46, 46);
 }
 
-.get_started button {
+.get_started1 button {
   width: 150px;
   height: 50px;
   border-radius: 25px 25px 25px 25px;
@@ -117,7 +117,7 @@ h1 {
   background-color: white;
 }
 
-.get_started button a {
+.get_started1 button a {
   color: black;
   text-decoration: none;
   font-size: 14px;
@@ -149,14 +149,20 @@ h1 {
 
 /*_______________________Stilizare Sectiune Video De Prezentare Si Prezentare Text_______________________*/
 
-#wrapper_description_video_written * {
-  width: 85%;
+#wrapper_description_video_written
+  *
+  :not(
+    video,
+    #wrapper_written_description figure img,
+    #wrapper_written_description figure,
+    #written_description *
+  ) {
+  width: 60%;
   margin: auto;
 }
 
 #wrapper_description_video_written {
   height: fit-content;
-  box-sizing: border-box;
   margin: 3% 0% 3% 0%;
 }
 
@@ -166,11 +172,10 @@ h1 {
 
 video {
   display: block;
-  padding-top: 3%;
-  border-top: 1px solid rgb(252, 130, 16);
+  width: 100%;
 }
 
-.text_of_description h2 {
+.title_of_description h2 {
   font-size: 37px;
   font-weight: 600;
   color: rgb(39, 36, 36);
@@ -178,6 +183,81 @@ video {
   font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
 }
 
-.text_of_description {
+.title_of_description {
   padding-bottom: 2%;
+}
+
+.video_of_description {
+  width: 82%;
+  padding-top: 3%;
+  border-top: 1px solid rgb(252, 130, 16);
+}
+
+#wrapper_written_description {
+  line-height: 1.8em;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  display: flex;
+  padding-top: 6%;
+}
+
+#wrapper_description_video_written #wrapper_written_description figure img {
+  max-width: 100%;
+}
+
+#wrapper_written_description figure img {
+  height: 80%;
+  object-fit: fill;
+}
+
+#wrapper_written_description figure {
+  margin: 0;
+  flex-basis: 50%;
+}
+
+#written_description {
+  flex-basis: 50%;
+}
+
+#written_description h1 {
+  display: block;
+  margin-bottom: 10%;
+  margin-top: 0%;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#written_description h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+  font-size: 16px;
+  height: 75px;
+  border-radius: 10px;
+}
+
+#written_description span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(46, 44, 44);
+}
+
+.get_started2 {
+  display: flex;
+  justify-content: center;
+}
+
+.get_started2 button {
+  width: 25%;
+  background-color: rgb(106, 20, 187);
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.get_started2 button a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
