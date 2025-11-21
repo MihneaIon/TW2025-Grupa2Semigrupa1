@@ -175,14 +175,6 @@ video {
   width: 100%;
 }
 
-.title_of_description h2 {
-  font-size: 37px;
-  font-weight: 600;
-  color: rgb(39, 36, 36);
-  text-align: center;
-  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
-}
-
 .title_of_description {
   padding-bottom: 2%;
 }
@@ -193,20 +185,23 @@ video {
   border-top: 1px solid rgb(252, 130, 16);
 }
 
+/*Evitare Preluare Width 100% Imagine Standard, Limitare La 100% Din figure, care este limitat la 50% Din Containerul Flexbox*/
+#wrapper_description_video_written #wrapper_written_description figure img {
+  max-width: 100%;
+}
+
+/*Conditii Preliminare Dimensiuni Si Acoperire Imagine*/
+#wrapper_written_description figure img {
+  height: 80%;
+  object-fit: fill;
+}
+
+/*Setare Procent De Ocupare A Intregului Container Flexbox Si Creare Continut Flexbox Continut Scris*/
 #wrapper_written_description {
   line-height: 1.8em;
   font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
   display: flex;
   padding-top: 6%;
-}
-
-#wrapper_description_video_written #wrapper_written_description figure img {
-  max-width: 100%;
-}
-
-#wrapper_written_description figure img {
-  height: 80%;
-  object-fit: fill;
 }
 
 #wrapper_written_description figure {
@@ -216,6 +211,15 @@ video {
 
 #written_description {
   flex-basis: 50%;
+}
+
+/*Stilizare Scris*/
+.title_of_description h2 {
+  font-size: 37px;
+  font-weight: 600;
+  color: rgb(39, 36, 36);
+  text-align: center;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
 }
 
 #written_description h1 {
@@ -230,6 +234,8 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  min-height: fit-content;
   background-color: rgb(235, 235, 235);
   font-size: 16px;
   height: 75px;
@@ -242,6 +248,7 @@ video {
   color: rgb(46, 44, 44);
 }
 
+/*Stilizare Buton*/
 .get_started2 {
   display: flex;
   justify-content: center;
@@ -261,3 +268,204 @@ video {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+/*_______________________Stilizare Rave Reviews_______________________*/
+#wrapper_rave_reviews > * {
+  width: 60%;
+  margin: auto;
+}
+
+/*Stilizare Continut*/
+#wrapper_rave_reviews {
+  background-color: rgb(238, 238, 238);
+  height: fit-content;
+  padding-bottom: 2%;
+}
+
+#title_rave_reviews {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#title_rave_reviews h1 {
+  font-size: 32px;
+  color: rgb(68, 67, 67);
+  text-align: center;
+}
+
+#rave_reviews div {
+  margin: 0;
+  width: 25%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 3%;
+  box-shadow: 1px 1px 1px black;
+  word-break: break-word;
+}
+
+#rave_reviews blockquote {
+  margin: 0;
+  padding: 5%;
+  color: rgb(61, 61, 61);
+  font-family: Open Sans, Arial, sans-serif;
+  word-spacing: 3px;
+  line-height: 1.5em;
+}
+
+#rave_reviews cite {
+  display: block;
+  margin-top: 10%;
+}
+
+/*Creare Flexbox Review-uri*/
+#rave_reviews {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*_______________________Stilizare Time Saving Solutions_______________________*/
+#wrapper_solutions_product > * {
+  width: 60%;
+  margin: auto;
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+#wrapper_solutions_product {
+  padding-bottom: 5em;
+}
+
+#wrapper_solutions_product {
+  background: radial-gradient(rgb(255, 178, 35), rgb(255, 255, 0));
+}
+
+#title_solution_section > * {
+  text-align: center;
+  margin: 0;
+  color: rgb(58, 58, 58);
+}
+
+#title_solution_section h3 {
+  opacity: 30%;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+#title_solution_section h2 {
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+/*Stilizare Elemente Grid Si Flex*/
+#solutions_of_product div {
+  display: flex;
+  min-height: fit-content;
+  min-height: 8em;
+  padding: 0.5em;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: break-word;
+  border-radius: 5%;
+}
+
+#solutions_of_product {
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 16%);
+  justify-content: space-evenly;
+}
+
+/*_______________________Stilizare Why Choose Us?_______________________*/
+
+#wrapper_motivation {
+  width: 60%;
+  margin: auto;
+}
+
+#wrapper_motivation figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+#wrapper_motivation figure img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#wrapper_motivation {
+  display: flex;
+}
+
+#wrapper_motivation > * {
+  flex-basis: 50%;
+}
+
+/*Stilizare Text*/
+#motivation_written {
+  padding-top: 5em;
+  color: rgb(58, 58, 58);
+}
+
+#motivation_written h3 {
+  opacity: 20%;
+}
+
+#motivation_written h2 {
+  font-size: 26px;
+  line-height: 0.8em;
+}
+
+#motivation_written h6 {
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+/*_______________________Stilizare Book_Zoom_______________________*/
+#wrapper_book_zoom > * {
+  width: 60%;
+  margin: auto;
+}
+
+#book_zoom {
+  display: flex;
+  justify-content: center;
+}
+
+/*Stilizare Continut*/
+
+#wrapper_book_zoom {
+  background: linear-gradient(to right, white, rgb(145, 145, 145));
+  color: rgb(58, 58, 58);
+  padding: 3em 0 3em 0;
+}
+
+#book_zoom button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: rgb(111, 9, 206);
+  border: none;
+}
+
+#book_zoom button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#book_zoom button:hover {
+  cursor: cell;
+  box-shadow: 3px 3px 3px gold;
+}
+
+#book_zoom button a:hover {
+  cursor: cell;
+}
+
+/*_______________________Stilizare HallMark Final_______________________*/
