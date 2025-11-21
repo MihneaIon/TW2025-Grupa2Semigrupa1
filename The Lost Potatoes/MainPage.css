@@ -147,4 +147,37 @@ h1 {
   margin-left: 20%;
 }
 
-/*_______________________Stilizare Sectiune Video De Prezentare Si Prezentare_______________________*/
+/*_______________________Stilizare Sectiune Video De Prezentare Si Prezentare Text_______________________*/
+
+#wrapper_description_video_written * {
+  width: 85%;
+  margin: auto;
+}
+
+#wrapper_description_video_written {
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 3% 0% 3% 0%;
+}
+
+#wrapper_description_video_written > * > * {
+  margin: auto;
+}
+
+video {
+  display: block;
+  padding-top: 3%;
+  border-top: 1px solid rgb(252, 130, 16);
+}
+
+.text_of_description h2 {
+  font-size: 37px;
+  font-weight: 600;
+  color: rgb(39, 36, 36);
+  text-align: center;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.text_of_description {
+  padding-bottom: 2%;
+}
