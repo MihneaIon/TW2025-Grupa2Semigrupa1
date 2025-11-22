@@ -126,25 +126,34 @@ h1 {
 }
 
 /*Grupare Cutii In Flexboxuri*/
-#motto_enroll {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-top: 5%;
-}
-
-.aesthetic_motto_section figure img {
-  width: 60%;
-  height: 100%;
-  object-fit: fill;
-}
 
 .aesthetic_motto_section {
   display: flex;
   padding-top: 3%;
   padding-bottom: 3%;
-  width: 80%;
-  margin-left: 20%;
+  width: 60%;
+  margin: auto;
+}
+
+.aesthetic_motto_section > * {
+  flex-basis: 50%;
+}
+
+#motto_enroll {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.aesthetic_motto_section figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+.aesthetic_motto_section figure img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 /*_______________________Stilizare Sectiune Video De Prezentare Si Prezentare Text_______________________*/
@@ -469,3 +478,72 @@ video {
 }
 
 /*_______________________Stilizare HallMark Final_______________________*/
+#wrapper_final_hallmark {
+  background: linear-gradient(to top, #c31432, #240b36);
+}
+
+#wrapper_final_hallmark > * {
+  width: 60%;
+  margin: auto;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+
+#wrapper_final_hallmark h2 {
+  font-weight: 900;
+}
+
+/*_______________________Stilizare Footer_______________________*/
+#wrapper_footer {
+  width: 60%;
+  margin: auto;
+}
+
+#wrapper_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social_media img {
+  width: 32px;
+  height: 32px;
+}
+
+footer * {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+
+footer h2 {
+  margin: 0;
+  padding-left: 4em;
+}
+
+footer {
+  padding: 2em 0 2em 0;
+  height: fit-content;
+  background: radial-gradient(#38a2d7, #561139);
+  border-top: 1px solid black;
+}
+
+footer nav {
+  height: fit-content;
+  width: 30%;
+}
+
+footer nav div {
+  display: flex;
+  height: 35px;
+  min-height: fit-content;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+footer nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
