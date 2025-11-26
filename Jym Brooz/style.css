@@ -15,51 +15,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* .header-background a {
-    text-decoration: none;
-    color: white;
-    display: block;
-} */
 
-
-/* nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-} */
 
 nav ul li {
     display: inline;
 }
 
-/* nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-} */
 
 .car-categories {
     text-align: center;
     margin: 20px 0;
 }
 
-/* .car-categories button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-} */
 
-/* .car-categories button:hover {
-    background: #0056b3;
-} */
 
 .car-list {
     display: flex;
@@ -70,10 +38,7 @@ nav ul li {
 }
 
 .car {
-    /* background: white; */
-    /* padding: 15px; */
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     text-align: center;
     width: 200px;
 }
@@ -88,22 +53,4 @@ h3 {
     margin-left: 15px;
     color: #333;
 }
-/* footer {
-    background: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-} */
-/* .car-button {
-    display: inline-block;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-} */
 
-/* .car-button:hover {
-    background: #333;
-} */
