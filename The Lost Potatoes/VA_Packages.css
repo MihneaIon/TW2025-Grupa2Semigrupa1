@@ -1,0 +1,173 @@
+/*!!!!!!!!!!!!!!!!Indeparteaza Marginea Automata body!!!!!!!!!!!!!!!!*/
+body {
+  margin: 0;
+}
+
+/*________________________Stilizare Sidebar De Navigare________________________*/
+
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+#header_navigation * {
+  height: 80px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav li a:hover {
+  text-shadow: 1px 1px 2px aqua;
+  color: gray;
+}
+
+nav li:first-child a {
+  color: rgb(207, 139, 12);
+}
+
+.page_navigation ul li {
+  white-space: nowrap;
+}
+
+.page_navigation ul li {
+  padding-top: 30px;
+  /*Paddingul Sa Nu Afecteze Inaltimea Sidebarului*/
+  box-sizing: border-box;
+}
+
+.page_navigation ul {
+  list-style-type: none;
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+#header_navigation {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content_container {
+  width: fit-content;
+  margin: auto;
+}
+
+#navigation_sidebar {
+  /*Setare Bara De Navigare Sa Se Miste In Timp Ce Scrollam*/
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  /*Creare Bordura Fina Sub Sidebar De Navigare*/
+  border-bottom: 1px solid brown;
+}
+
+/*!!!!!!!!!!!!!!!!Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body!!!!!!!!!!!!!!!!*/
+#page_content {
+  box-sizing: border-box;
+  min-width: fit-content;
+}
+
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
+
+#motto_wrapper {
+  background: radial-gradient(rgb(255, 255, 0), rgb(255, 178, 35));
+  height: fit-content;
+  /*Pentru A Evita Distanta Nedorita Cu Bara De Navigare Din Cauza Pozitiei Lipicioase*/
+  overflow: hidden;
+}
+
+/*Grupare Cutii In Flexboxuri*/
+#written_motto {
+  display: flex;
+  flex-direction: column;
+}
+
+#content_motto {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+#content_motto > * {
+  flex-basis: 48%;
+}
+
+#content_motto figure {
+  margin: 0;
+  max-width: 100%;
+  padding-top: 4%;
+  box-sizing: border-box;
+}
+
+#content_motto figure img {
+  margin: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 4%;
+  object-fit: fill;
+}
+
+/*Stilizare Generala*/
+
+#written_motto {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#motto_principal {
+  padding-bottom: 25%;
+}
+
+#written_motto * {
+  display: block;
+  height: fit-content;
+  margin: 0;
+}
+
+#written_motto h1 {
+  font-size: 50px;
+}
+
+#written_motto h3 {
+  font-size: 20px;
+}
+
+#principal_advice p {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+#content_motto a {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 40px;
+  border-radius: 40px 40px 40px 40px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#content_motto a:hover {
+  border: none;
+  background-color: rgb(92, 88, 88);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/

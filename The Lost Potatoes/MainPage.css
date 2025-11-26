@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-/*________________________Stilizare Sidebar De Naviare________________________*/
+/*________________________Stilizare Sidebar De Navigare________________________*/
 
 * {
   font-family: "Open Sans", Arial, sans-serif;
@@ -70,13 +70,13 @@ nav li:first-child a {
   border-bottom: 1px solid brown;
 }
 
-/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
-
-/*Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body*/
+/*!!!!!!!!!!!!!!!!Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body!!!!!!!!!!!!!!!!*/
 #page_content {
   box-sizing: border-box;
   min-width: fit-content;
 }
+
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
 
 #laitmotiv_pagina {
   background: radial-gradient(rgb(255, 178, 35), rgb(255, 255, 0));
@@ -115,6 +115,10 @@ h1 {
   border: none;
   box-shadow: 1px 1px 1px grey;
   background-color: white;
+}
+
+.get_started1 button:hover {
+  cursor: pointer;
 }
 
 .get_started1 button a {
@@ -269,6 +273,10 @@ video {
   height: 50px;
   border-radius: 8px;
   border: none;
+}
+
+.get_started2 button:hover {
+  cursor: pointer;
 }
 
 .get_started2 button a {
