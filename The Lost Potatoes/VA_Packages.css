@@ -171,3 +171,208 @@ nav li:first-child a {
 }
 
 /*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
+#wrapper_motivation {
+  height: fit-content;
+}
+
+#motivation_title {
+  width: 60%;
+  margin: auto;
+}
+
+/*Grupare In Flexboxuri*/
+#motivation_statement {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+#motivation_statement figure {
+  flex-basis: 40%;
+}
+
+#motivation_statement #motivation_written {
+  flex-basis: 56%;
+}
+
+#motivation_statement figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+#motivation_statement figure img {
+  margin: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  object-position: top;
+  vertical-align: super;
+}
+
+/*Stilizare Generala*/
+#motivation_title {
+  padding: 60px 0 30px 0;
+}
+
+#motivation_title h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#motivation_title h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+#motivation_written ul li::marker {
+  font-size: 20px;
+}
+
+#motivation_written li {
+  box-sizing: border-box;
+  justify-items: space-between;
+  margin-bottom: 3em;
+  font-size: 18px;
+}
+
+#motivation_written li:not(:has(li > strong)) {
+  font-weight: 600;
+}
+
+/*_______________________Stilizarea Sectiune Testimoniale_______________________*/
+#review_wrapper {
+  background: linear-gradient(
+    to right top,
+    #1ccb77,
+    #46c961,
+    #61c64a,
+    #78c22f,
+    #8ebe04
+  );
+  padding: 40px 0 30px 0;
+}
+
+/*Grpare Review-uri In Flexbox*/
+#content_testimonials {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
+#content_testimonials div {
+  flex-basis: 30%;
+  height: fit-content;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+#content_testimonials * {
+  margin: 0;
+}
+
+/*Stilizare Generala Continut*/
+
+#content_testimonials div {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#content_testimonials div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 25px rgba(0, 0, 0, 0.15);
+}
+
+#content_testimonials div::before {
+  content: url("VA_Packages_Content/quote.svg");
+  position: absolute;
+  top: -16px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 42%;
+  background: #e0e0e0;
+  border-radius: 50%;
+  border: 2px solid rgb(44, 41, 41);
+}
+
+#content_testimonials div img {
+  max-width: 35%;
+  display: block;
+  margin: 16px auto 16px auto;
+  border-radius: 50%;
+}
+
+#content_testimonials
+  div
+  img[src="VA_Packages_Content/bigstock-456031845.jpg"] {
+  border: 2px solid rgba(189, 185, 185, 0.5);
+}
+
+#content_testimonials div *:not(img) {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/*_______________________Stilizare Footer_______________________*/
+#wrapper_footer {
+  width: 60%;
+  margin: auto;
+}
+
+#wrapper_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social_media img {
+  width: 32px;
+  height: 32px;
+}
+
+footer * {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+
+footer h2 {
+  margin: 0;
+  padding-left: 4em;
+}
+
+footer {
+  padding: 2em 0 2em 0;
+  height: fit-content;
+  background: radial-gradient(#38a2d7, #561139);
+  border-top: 1px solid black;
+}
+
+footer nav {
+  height: fit-content;
+  width: 30%;
+}
+
+footer nav div {
+  display: flex;
+  height: 35px;
+  min-height: fit-content;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+footer nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
