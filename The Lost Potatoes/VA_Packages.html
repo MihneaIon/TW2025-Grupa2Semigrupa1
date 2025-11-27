@@ -9,6 +9,9 @@
       rel="icon"
       href="VA_Packages_Content/cropped-chrono-tasks-32x32.png"
     />
+    <link rel="stylesheet" href="USD_Pricing_Table.css" disabled />
+    <link rel="stylesheet" href="CAD_Pricing_Table.css" />
+    <script src="VA_Packages.js"></script>
   </head>
   <body>
     <div id="page_content">
@@ -124,7 +127,7 @@
           </div>
         </div>
 
-        <!--Sectiune Cu Ceteva Riview-uri-->
+        <!--Sectiune Cu Ceteva Testimoniale-->
         <div id="review_wrapper">
           <div id="content_testimonials">
             <div>
@@ -172,6 +175,33 @@
               >
             </div>
           </div>
+        </div>
+
+        <!-- Currency Toggle Buttons -->
+        <div class="currency-toggle">
+          <button class="toggle_btn active" data-currency="CAD">CAD</button>
+          <button class="toggle_btn" data-currency="USD">USD</button>
+        </div>
+
+        <!--Wrapper Tabel Cu Preturi In Valuta Canadiana-->
+        <div id="pricing_table_wrapper_CAD">
+          <table>
+            <tr>
+              <th rowspan="2">Choose your plan</th>
+              <th>Essential Help</th>
+              <th>Efficiency Elite</th>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+
+        <!--Wrapper Tabel Cu Preturi In Valuta Americana-->
+        <div id="pricing_table_wrapper_USD" style="display: none">
+          <table>
+            <tr>
+              <td>ok</td>
+            </tr>
+          </table>
         </div>
 
         <!--________________________Sectiune Footer________________________-->
