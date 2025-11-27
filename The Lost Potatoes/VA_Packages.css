@@ -68,6 +68,8 @@ nav li:first-child a {
   top: 0px;
   /*Creare Bordura Fina Sub Sidebar De Navigare*/
   border-bottom: 1px solid brown;
+  /*Afisare SideBar De Navigare Cand Trece Peste Elemente La Nivel Cat Mai Ridicat Pentru A Nu Fi Acoperit*/
+  z-index: 9999;
 }
 
 /*!!!!!!!!!!!!!!!!Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body!!!!!!!!!!!!!!!!*/
@@ -320,6 +322,122 @@ nav li:first-child a {
   display: block;
   margin-bottom: 16px;
   font-weight: bold;
+}
+
+/*_______________________Stilizare Generala A Butoanelor De Pricing_______________________*/
+#toggle_currency_wrapper {
+  padding: 5em 0 1em 0;
+}
+
+#toggle_currency_wrapper h3 {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#toggle_currency_wrapper .currency-toggle {
+  margin: auto;
+}
+
+#toggle_currency_wrapper button:hover {
+  cursor: pointer;
+}
+
+.currency-toggle {
+  width: 25%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.currency-toggle > * {
+  flex-basis: 49%;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.currency-toggle .toggle_btn {
+  border: none;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: bolder;
+  font-size: 18px;
+}
+
+.currency-toggle .toggle_btn.active {
+  border: none;
+  background-color: rgb(68, 62, 62);
+  color: white;
+  text-decoration: none;
+  font-size: bolder;
+  font-size: 18px;
+}
+
+/*_______________________Stilizare Generala A Tabelelor De Pricing_______________________*/
+.purchase_plan {
+  width: 40%;
+  margin: 0 auto 5em auto;
+}
+
+.purchase_plan {
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+.purchase_plan :is(th, td):nth-child(-n + 3) {
+  width: 25%;
+  border-right: 2px solid rgb(138, 138, 138);
+  margin: 0;
+}
+
+.purchase_plan tbody tr:nth-child(odd) {
+  background-color: #fffeccff;
+}
+
+.purchase_plan tbody tr:nth-child(even) {
+  background-color: #ffe699ff;
+}
+
+.purchase_plan tfoot {
+  background-color: #ffe699ff;
+}
+
+.purchase_plan tbody tr:nth-child(n + 2) td:nth-child(n + 2) {
+  background-image: url("VA_Packages_Content/check-mark.png"); /* Path to your image */
+  background-repeat: no-repeat; /* Prevent tiling/repeating */
+  background-position: center center; /* Horizontally center (adjust if needed: left center, right center, etc.) */
+  background-size: 20px;
+}
+
+.purchase_plan tbody tr td {
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.purchase_plan tbody tr:nth-child(1) td:nth-child(n + 2) {
+  text-align: center;
+}
+
+.purchase_plan tfoot a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.purchase_plan tfoot tr {
+  line-height: 60px;
+}
+
+.purchase_plan tfoot td {
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*_______________________Stilizare Footer_______________________*/

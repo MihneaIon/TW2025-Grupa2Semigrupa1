@@ -68,6 +68,8 @@ nav li:first-child a {
   top: 0px;
   /*Creare Bordura Fina Sub Sidebar De Navigare*/
   border-bottom: 1px solid brown;
+  /*Afisare SideBar De Navigare Cand Trece Peste Elemente La Nivel Cat Mai Ridicat Pentru A Nu Fi Acoperit*/
+  z-index: 9999;
 }
 
 /*!!!!!!!!!!!!!!!!Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body!!!!!!!!!!!!!!!!*/

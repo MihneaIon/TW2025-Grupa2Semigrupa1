@@ -67,7 +67,7 @@
                   >
                 </p>
               </div>
-              <a href="#purchase_plan">Plans And Pricing</a>
+              <a href=".purchase_plan">Plans And Pricing</a>
             </div>
             <!--Logo Sectiune Continutul Cu Motto Pagina-->
             <figure>
@@ -177,30 +177,250 @@
           </div>
         </div>
 
-        <!-- Currency Toggle Buttons -->
-        <div class="currency-toggle">
-          <button class="toggle_btn active" data-currency="CAD">CAD</button>
-          <button class="toggle_btn" data-currency="USD">USD</button>
+        <!--Butoane Comutare Valuta-->
+        <div id="toggle_currency_wrapper">
+          <h3>Please Select Your Plan</h3>
+          <div class="currency-toggle">
+            <button class="toggle_btn active" data-currency="CAD">CAD</button>
+            <button class="toggle_btn" data-currency="USD">USD</button>
+          </div>
         </div>
 
         <!--Wrapper Tabel Cu Preturi In Valuta Canadiana-->
         <div id="pricing_table_wrapper_CAD">
-          <table>
-            <tr>
-              <th rowspan="2">Choose your plan</th>
-              <th>Essential Help</th>
-              <th>Efficiency Elite</th>
-            </tr>
-            <tr></tr>
+          <table class="purchase_plan">
+            <thead>
+              <tr>
+                <th rowspan="2" style="background-color: #fffeccff">
+                  Choose your plan
+                </th>
+                <th style="background-color: #ffd44dff">Essential Help</th>
+                <th style="background-color: #ffe123ff">Efficiency Elite</th>
+                <th style="background-color: #ffc100ff">
+                  Productivity Powerhouse
+                </th>
+              </tr>
+              <tr>
+                <th style="background-color: #c28a01ff">$175 / week</th>
+                <th style="background-color: #ea6d00ff">$340 / week</th>
+                <th style="background-color: #a54c15ff">$640 / week</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Total hours</td>
+                <td>up to 5 hours/week</td>
+                <td>up to 10 hours/week</td>
+                <td>up to 20 hours/week</td>
+              </tr>
+              <tr>
+                <td>Free initial consultation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>1-hour orientation Zoom call</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Task work</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Digital marketing work</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Productivity tools and recommendations</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Automation tools</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Task status dashboard</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>KPI dashboard</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Digital marketing consultation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Integration with existing task management systems</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td></td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #c28a01ff"
+                    >Get Started</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #ea6d00ff"
+                    >Get Started</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #a54c15ff"
+                    >Get Started</a
+                  >
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </div>
 
         <!--Wrapper Tabel Cu Preturi In Valuta Americana-->
         <div id="pricing_table_wrapper_USD" style="display: none">
-          <table>
-            <tr>
-              <td>ok</td>
-            </tr>
+          <table class="purchase_plan">
+            <thead>
+              <tr>
+                <th rowspan="2" style="background-color: #fffeccff">
+                  Choose your plan
+                </th>
+                <th style="background-color: #ffd44dff">Essential Help</th>
+                <th style="background-color: #ffe123ff">Efficiency Elite</th>
+                <th style="background-color: #ffc100ff">
+                  Productivity Powerhouse
+                </th>
+              </tr>
+              <tr>
+                <th style="background-color: #c28a01ff">$128 / week</th>
+                <th style="background-color: #ea6d00ff">$250 / week</th>
+                <th style="background-color: #a54c15ff">$474 / week</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Total hours</td>
+                <td>up to 5 hours/week</td>
+                <td>up to 10 hours/week</td>
+                <td>up to 20 hours/week</td>
+              </tr>
+              <tr>
+                <td>Free initial consultation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>1-hour orientation Zoom call</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Task work</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Digital marketing work</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Productivity tools and recommendations</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Automation tools</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Task status dashboard</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>KPI dashboard</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Digital marketing consultation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Integration with existing task management systems</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td></td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #c28a01ff"
+                    >Get Started</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #ea6d00ff"
+                    >Get Started</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://buy.stripe.com/28o28Sb0uaQh8ikfZn"
+                    style="background-color: #a54c15ff"
+                    >Get Started</a
+                  >
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </div>
 
