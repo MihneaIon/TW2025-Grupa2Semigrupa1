@@ -7,7 +7,7 @@ body {
 }
 
 .header-background {
-    background: url('carernt.jpg') no-repeat center center/cover;
+    background: url('imagini/carrent.jpg') no-repeat center center/cover;
     padding: 110px 0;
     text-align: center;
     font-size: 24px;
@@ -15,42 +15,114 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-nav ul li {
-    display: inline;
+nav {
+    border-top: 4px solid rgba(7, 90, 7, 0.877);
+    border-bottom: 4px solid rgba(7, 90, 7, 0.877);
+    width: 1200px;
+    padding: 15px;
+    margin: auto;
 }
-
 
 .car-categories {
     text-align: center;
     margin: 20px 0;
 }
 
-
-
 .car-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
 .car {
     border-radius: 10px;
     text-align: center;
-    width: 200px;
+    width: 220px;
 }
 
 .car img {
-    max-width: 100%;
+    max-width: 150%;
     border-radius: 5px;
+    border: 5px solid transparent;
+    border-color: aquamarine;
 }
 
 h3 {
     text-align: center;
     margin-left: 15px;
     color: #333;
+}
+
+#maintitle {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px #05212cda;;
+}
+
+.navigation {
+    display: inline;
+    padding: 100px;
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.option_nav  {
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow:
+                -1px -1px 0 #000000c4,
+                1px -1px 0 #000000c4,
+                -1px 1px 0 #000000c4,
+                1px 1px 0 #000000c4,
+                -2px 0px 0 #000000c4,
+                2px 0px 0 #000000c4,
+                0px -2px 0 #000000c4,
+                0px 2px 0 #000000c4;
+}
+
+.home_list {
+    position: relative;
+    display: inline-block;
+}
+
+.home-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.home-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 80%;
+}
+
+/* Change color of dropdown links on hover */
+.home-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.home_list:hover .home-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.option_nav:hover {
+    background-color: #3e8e41;
 }
 
