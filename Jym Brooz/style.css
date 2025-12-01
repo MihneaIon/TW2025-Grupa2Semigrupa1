@@ -14,25 +14,6 @@ body {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-.header-background a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-} 
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-
-=======
 nav {
     border-top: 4px solid rgba(7, 90, 7, 0.877);
     border-bottom: 4px solid rgba(7, 90, 7, 0.877);
@@ -41,30 +22,11 @@ nav {
     margin: auto;
 }
 
->>>>>>> aab1641f9092d1d29df0c9f8f8a1853c74670699
 .car-categories {
     text-align: center;
     margin: 20px 0;
 }
 
-<<<<<<< HEAD
-.car-categories button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-} 
-
-.car-categories button:hover {
-    background: #0056b3;
-}
-
-=======
->>>>>>> aab1641f9092d1d29df0c9f8f8a1853c74670699
 .car-list {
     display: flex;
     flex-wrap: wrap;
@@ -79,12 +41,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     text-align: center;
-<<<<<<< HEAD
-    width: 200px;
-
-=======
     width: 220px;
->>>>>>> aab1641f9092d1d29df0c9f8f8a1853c74670699
 }
 
 .car img {
@@ -110,15 +67,6 @@ h3 {
     color: #333;
 }
 
-<<<<<<< HEAD
-footer {
-    background: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-=======
 #maintitle {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -189,5 +137,20 @@ footer {
 .option_nav:hover {
     background-color: #3e8e41;
 }
->>>>>>> aab1641f9092d1d29df0c9f8f8a1853c74670699
+
+footer{
+    background-color: #333232;
+    color: #f1f1f1;
+    text-shadow:
+                -1px -1px 0 #000000c4,
+                1px -1px 0 #000000c4,
+                -1px 1px 0 #000000c4,
+                1px 1px 0 #000000c4,
+                -2px 0px 0 #000000c4,
+                2px 0px 0 #000000c4,
+                0px -2px 0 #000000c4,
+                0px 2px 0 #000000c4;
+    
+}
+
 
