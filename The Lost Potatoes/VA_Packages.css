@@ -1,0 +1,496 @@
+/*!!!!!!!!!!!!!!!!Indeparteaza Marginea Automata body!!!!!!!!!!!!!!!!*/
+body {
+  margin: 0;
+}
+
+/*________________________Stilizare Sidebar De Navigare________________________*/
+
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+#header_navigation * {
+  height: 80px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav li a:hover {
+  text-shadow: 1px 1px 2px aqua;
+  color: gray;
+}
+
+nav li:first-child a {
+  color: rgb(207, 139, 12);
+}
+
+.page_navigation ul li {
+  white-space: nowrap;
+}
+
+.page_navigation ul li {
+  padding-top: 30px;
+  /*Paddingul Sa Nu Afecteze Inaltimea Sidebarului*/
+  box-sizing: border-box;
+}
+
+.page_navigation ul {
+  list-style-type: none;
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+#header_navigation {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content_container {
+  width: fit-content;
+  margin: auto;
+}
+
+#navigation_sidebar {
+  /*Setare Bara De Navigare Sa Se Miste In Timp Ce Scrollam*/
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  /*Creare Bordura Fina Sub Sidebar De Navigare*/
+  border-bottom: 1px solid brown;
+  /*Afisare SideBar De Navigare Cand Trece Peste Elemente La Nivel Cat Mai Ridicat Pentru A Nu Fi Acoperit*/
+  z-index: 9999;
+}
+
+/*!!!!!!!!!!!!!!!!Setam Latimea Minima A Continutului Ca Latimea Celui Mai Mare Element Din Body!!!!!!!!!!!!!!!!*/
+#page_content {
+  box-sizing: border-box;
+  min-width: fit-content;
+}
+
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
+
+#motto_wrapper {
+  background: radial-gradient(rgb(255, 255, 0), rgb(255, 178, 35));
+  height: fit-content;
+  /*Pentru A Evita Distanta Nedorita Cu Bara De Navigare Din Cauza Pozitiei Lipicioase*/
+  overflow: hidden;
+}
+
+/*Grupare Cutii In Flexboxuri*/
+#written_motto {
+  display: flex;
+  flex-direction: column;
+}
+
+#content_motto {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+#content_motto > * {
+  flex-basis: 48%;
+}
+
+#content_motto figure {
+  margin: 0;
+  max-width: 100%;
+  padding-top: 4%;
+  box-sizing: border-box;
+}
+
+#content_motto figure img {
+  margin: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 4%;
+  object-fit: fill;
+}
+
+/*Stilizare Generala*/
+
+#written_motto {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#motto_principal {
+  padding-bottom: 25%;
+}
+
+#written_motto * {
+  display: block;
+  height: fit-content;
+  margin: 0;
+}
+
+#written_motto h1 {
+  font-size: 50px;
+}
+
+#written_motto h3 {
+  font-size: 20px;
+}
+
+#principal_advice p {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+#content_motto a {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 40px;
+  border-radius: 40px 40px 40px 40px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#content_motto a:hover {
+  border: none;
+  background-color: rgb(92, 88, 88);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*_______________________Stilizarea Sectiuni Ce Include Motto-ul_______________________*/
+#wrapper_motivation {
+  height: fit-content;
+}
+
+#motivation_title {
+  width: 60%;
+  margin: auto;
+}
+
+/*Grupare In Flexboxuri*/
+#motivation_statement {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+#motivation_statement figure {
+  flex-basis: 40%;
+}
+
+#motivation_statement #motivation_written {
+  flex-basis: 56%;
+}
+
+#motivation_statement figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+#motivation_statement figure img {
+  margin: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  object-position: top;
+  vertical-align: super;
+}
+
+/*Stilizare Generala*/
+#motivation_title {
+  padding: 60px 0 30px 0;
+}
+
+#motivation_title h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#motivation_title h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+#motivation_written ul li::marker {
+  font-size: 20px;
+}
+
+#motivation_written li {
+  box-sizing: border-box;
+  justify-items: space-between;
+  margin-bottom: 3em;
+  font-size: 18px;
+}
+
+#motivation_written li:not(:has(li > strong)) {
+  font-weight: 600;
+}
+
+/*_______________________Stilizarea Sectiune Testimoniale_______________________*/
+#review_wrapper {
+  background: linear-gradient(
+    to right top,
+    #1ccb77,
+    #46c961,
+    #61c64a,
+    #78c22f,
+    #8ebe04
+  );
+  padding: 40px 0 30px 0;
+}
+
+/*Grpare Review-uri In Flexbox*/
+#content_testimonials {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
+#content_testimonials div {
+  flex-basis: 30%;
+  height: fit-content;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+#content_testimonials * {
+  margin: 0;
+}
+
+/*Stilizare Generala Continut*/
+
+#content_testimonials div {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#content_testimonials div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 25px rgba(0, 0, 0, 0.15);
+}
+
+#content_testimonials div::before {
+  content: url("VA_Packages_Content/quote.svg");
+  position: absolute;
+  top: -16px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 42%;
+  background: #e0e0e0;
+  border-radius: 50%;
+  border: 2px solid rgb(44, 41, 41);
+}
+
+#content_testimonials div img {
+  max-width: 35%;
+  display: block;
+  margin: 16px auto 16px auto;
+  border-radius: 50%;
+}
+
+#content_testimonials
+  div
+  img[src="VA_Packages_Content/bigstock-456031845.jpg"] {
+  border: 2px solid rgba(189, 185, 185, 0.5);
+}
+
+#content_testimonials div *:not(img) {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/*_______________________Stilizare Generala A Butoanelor De Pricing_______________________*/
+#toggle_currency_wrapper {
+  padding: 5em 0 1em 0;
+}
+
+#toggle_currency_wrapper h3 {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#toggle_currency_wrapper .currency-toggle {
+  margin: auto;
+}
+
+#toggle_currency_wrapper button:hover {
+  cursor: pointer;
+}
+
+.currency-toggle {
+  width: 25%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.currency-toggle > * {
+  flex-basis: 49%;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.currency-toggle .toggle_btn {
+  border: none;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: bolder;
+  font-size: 18px;
+}
+
+.currency-toggle .toggle_btn.active {
+  border: none;
+  background-color: rgb(68, 62, 62);
+  color: white;
+  text-decoration: none;
+  font-size: bolder;
+  font-size: 18px;
+}
+
+/*_______________________Stilizare Generala A Tabelelor De Pricing_______________________*/
+.purchase_plan {
+  width: 40%;
+  margin: 0 auto 5em auto;
+}
+
+.purchase_plan {
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+.purchase_plan :is(th, td):nth-child(-n + 3) {
+  width: 25%;
+  border-right: 2px solid rgb(138, 138, 138);
+  margin: 0;
+}
+
+.purchase_plan tbody tr:nth-child(odd) {
+  background-color: #fffeccff;
+}
+
+.purchase_plan tbody tr:nth-child(even) {
+  background-color: #ffe699ff;
+}
+
+.purchase_plan tfoot {
+  background-color: #ffe699ff;
+}
+
+.purchase_plan tbody tr:nth-child(n + 2) td:nth-child(n + 2) {
+  background-image: url("VA_Packages_Content/check-mark.png"); /* Path to your image */
+  background-repeat: no-repeat; /* Prevent tiling/repeating */
+  background-position: center center; /* Horizontally center (adjust if needed: left center, right center, etc.) */
+  background-size: 20px;
+}
+
+.purchase_plan tbody tr td {
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.purchase_plan tbody tr:nth-child(1) td:nth-child(n + 2) {
+  text-align: center;
+}
+
+.purchase_plan tfoot a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.purchase_plan tfoot tr {
+  line-height: 60px;
+}
+
+.purchase_plan tfoot td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*_______________________Stilizare Footer_______________________*/
+#wrapper_footer {
+  width: 60%;
+  margin: auto;
+}
+
+#wrapper_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social_media img {
+  width: 32px;
+  height: 32px;
+}
+
+footer * {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+
+footer h2 {
+  margin: 0;
+  padding-left: 4em;
+}
+
+footer {
+  padding: 2em 0 2em 0;
+  height: fit-content;
+  background: radial-gradient(#38a2d7, #561139);
+  border-top: 1px solid black;
+}
+
+footer nav {
+  height: fit-content;
+  width: 30%;
+}
+
+footer nav div {
+  display: flex;
+  height: 35px;
+  min-height: fit-content;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+footer nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}

@@ -1,0 +1,71 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Stilizare bara navigare*/
+.imagine{
+    width: 169px;
+    height: 46px;
+}
+.prima, .adoua, .navigare1, .navigare2, #conexiuni, #logare, h1, #cautare, .col{
+    display: inline;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+a:hover{
+    color: white;
+}
+#lista{
+    text-transform: uppercase;
+    background-color: #222;
+}
+
+.navigare1{
+    text-align: left;
+}
+.foto{
+    width: 30px;
+    height: 30px;
+}
+#logare{
+    text-align: right;
+}
+/*A doua bara de navigare*/
+
+.navigare3{
+    text-transform: uppercase;
+    background-color: #333333;
+    text-align: center;
+    word-spacing: 9px;
+}
+.atreia{
+    display: inline;
+}
+
+#lista2{
+    margin-top: -17px;
+}
+
+/*Pagina in sine*/
+
+#descriere{
+    font-family: 'Times New Roman', Times, serif;
+}
+#collection{
+    border-bottom: 2px solid #474747;
+}
+
+#coloanastanga{
+    width: 18rem;
+    min-width: 18rem;
+    padding-top: 2rem;
+    padding-right: 2.5rem;
+    border-right: 0.2rem solid transparent;
+}
+
+#webcrawl{
+    color: blue;
+    
+}

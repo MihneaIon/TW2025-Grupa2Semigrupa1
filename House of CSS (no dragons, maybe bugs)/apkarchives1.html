@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>APK Archive</title>
+  <link rel="stylesheet" href="apkarchives.css">
+</head>
+<body>
+
+  <h1>APK Archive</h1>
+  <p>A collection of APK (Android Package) Software Programs uploaded by various users.</p>
+
+  <hr>
+
+  <table width="100%">
+    <tr>
+      <td><b>COLLECTION</b></td>
+      <td><a href="">ABOUT</a></td>
+      <td align="right">
+        <a href="">Share</a> |
+        <a href="">RSS</a> |
+        <a href="">Play All</a>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <form>
+    <input type="search" name="query" placeholder="Search">
+    <input type="submit" value="Search this collection">
+    <br><br>
+    <label><input type="radio" name="stype" value="metadata"> Search metadata</label>
+    <label><input type="radio" name="stype" value="text"> Search text contents</label>
+  </form>
+
+  <p><b>105,898 Results</b></p>
+
+  <hr>
+
+  <h3>Filters</h3>
+
+<h4>Year Published</h4>
+<label for="yearStart">Choose</label>
+<input type="range" id="yearStart" name="yearStart" min="1" max="2064" value="1" oninput="startOutput.value = yearStart.value">
+<output id="startOutput">1</output>
+<br>
+
+
+
+  
+  <h4>Part Of</h4>
+  <ul>
+    <li><a href="">The Phone Software Archive</a></li>
+    <li><a href="">Software</a></li>
+    <li><a href="">Mute</a></li>
+  </ul>
+
+  <h4>Media Type</h4>
+  <ul>
+    <li><label><input type="checkbox" name="media" value="software"> Software (92,502)</label></li>
+    <li><label><input type="checkbox" name="media" value="data"> Data (8,704)</label></li>
+    <li><label><input type="checkbox" name="media" value="movies"> Movies (2,939)</label></li>
+    <li><label><input type="checkbox" name="media" value="image"> Image (1,007)</label></li>
+    <li><label><input type="checkbox" name="media" value="audio"> Audio (394)</label></li>
+  </ul>
+
+</body>
+</html>
