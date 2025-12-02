@@ -14,6 +14,10 @@ body {
     font-weight: bold;
 }
 
+h2{
+    text-decoration: underline;
+}
+
 nav {
     border-top: 4px solid rgba(7, 90, 7, 0.877);
     border-bottom: 4px solid rgba(7, 90, 7, 0.877);
