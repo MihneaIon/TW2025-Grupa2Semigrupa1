@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+
+.topnav, .subnav {
+  background: #282828;
+  padding: 10px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.topnav {
+  justify-content: flex-start;
+}
+.subnav{background:#555555;margin-top:4px}
+.topnav a, .subnav a{text-decoration:none;color:#ffffff;font-size:15px;}
+.headerbox{padding:30px 10px;text-align:center;max-width:800px;margin:auto}
+.headerbox h1{font-size:20px;margin:0 0 15px}
+.searchbox{display:flex;max-width:600px;margin:auto}
+.searchbox input{flex:1;padding:10px;font-size:15px;border:1px solid #aaa;border-radius:4px 0 0 4px}
+.searchbox button{padding:10px 14px;font-size:15px;border:1px solid #aaa;background:#fff;border-radius:0 4px 4px 0}
+.columns-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  .column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .column:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+  .topnav_image {
+    filter:
+        brightness(0)
+        invert(100%);    
+  }
+  .yellow { background-color: #FFD700; }
+  .orange { background-color: #FFA500; }
+  .red { background-color: #FF0000; }
+  .blue { background-color: #0000FF; }
+  .green { background-color: #008000; }
+  .purple { background-color: #800080; }
+  .soft-blue { background-color: #87CEEB; }
+  .dark-blue { background-color: #00008B; }
+
+</style>
+</head>
+<body>
+<div class="topnav">
+    <a href="#"> <img src="./img_1.svg" width="30" height="30" class="topnav_image"> WEB</a>
+    <a href="#"> <img src="./img_2.svg" width="30" height="30" class="topnav_image"> TEXTS</a>
+    <a href="#"> <img src="./img_3.svg" width="30" height="30" class="topnav_image"> VIDEO</a>
+    <a href="#"> <img src="./img_4.svg" width="30" height="30" class="topnav_image"> AUDIO</a>
+    <a href="#"> <img src="./img_7.svg" width="30" height="30" class="topnav_image"> SOFTWARE</a>
+    <a href="#"> <img src="./img_6.svg" width="30" height="30" class="topnav_image"> IMAGES</a>
+</div>
+<div class="subnav">
+    <a href="#">ABOUT</a>
+    <a href="#">BLOG</a>
+    <a href="#">EVENTS</a>
+    <a href="#">PROJECTS</a>
+    <a href="#">HELP</a>
+    <a href="#">DONATE</a>
+    <a href="#">CONTACT</a>
+    <a href="#">JOBS</a>
+    <a href="#">VOLUNTEER</a>
+</div>
+
+<div class="headerbox">
+    <h4>Search the history of more than 1 trillion web pages on the Internet.</h4>
+<br>
+<div class="searchbox">
+    <img src="./logo.png" width="128" height="72">
+    <input placeholder="Search the Wayback Machine">
+
+<button>Search</button>
+</div>
+</div>
+
+<div class="columns-container">
+  <div class="column">
+    <div class="column-content">
+      <img src="./logo_icon.svg" width="140" height="140">
+      <p>Celebrate 1 trillion <br> web pages archived!</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="column-content">
+      <h2>Internet Archive is a non-profit library of millions of free texts, movies, software, music, websites, and more.</h2>
+      <img src="./img_1.svg" width="30" height="30" class="yellow">
+      <img src="./img_2.svg" width="30" height="30" class="orange">
+      <img src="./img_3.svg" width="30" height="30" class="red">
+      <img src="./img_4.svg" width="30" height="30" class="blue">
+      <img src="./img_5.svg" width="30" height="30" class="red">
+      <img src="./img_6.svg" width="30" height="30" class="green">
+      <img src="./img_7.svg" width="30" height="30" class="purple">
+      <img src="./img_8.svg" width="30" height="30" class="soft-blue">
+      <img src="./img_9.svg" width="30" height="30" class="blue">
+      <br>
+        <div class="searchbox">
+            <input placeholder="Search the Wayback Machine">
+            <button>Go</button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="column-content">
+      <h6>Archive News <br> <br>
+        2026 Public Domain Film Remix Contest: The Internet Archive is Looking For Creative Short Films Made By You!<br> <br>
+        A Landmark History of the AIDS Crisis Is Now Free for All To Read<br> <br>
+        Boston Library Consortium Joins Statement Supporting Digital Rights for Memory Institutions<br> <br>
+        More posts</h6>
+    </div>
+  </div>
+</div>
+<h2 style="margin: 0 auto; width: fit-content;"> New to the Archive? </h2>
+<br>
+<div style="
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+">
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_1.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Audio Books & Poetry
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      76,089 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_2.svg" width="50" height="50" style="margin-bottom: 5px;">
+      LibriVox Audiobooks
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      21,025 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_3.svg" width="50" height="50" style="margin-bottom: 5px;">
+      APK Archive
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      122,404 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_4.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Folksoundomy
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      1,060,252 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_5.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Phone Software
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      208,714 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_6.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Live Music Archive
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      292,778 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_7.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Arts & Music
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      11,547 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_8.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Electric Sheep
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      823 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./img_9.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Kodi Archive
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      44,670 ITEMS
+    </div>
+  </div>
+  
+  <div style="width: 120px;">
+    <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
+      <img src="./server_icon.svg" width="50" height="50" style="margin-bottom: 5px;">
+      Archive Books
+    </div>
+    <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
+      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      4,973,259 ITEMS
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
