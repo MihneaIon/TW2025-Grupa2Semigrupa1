@@ -162,6 +162,8 @@ nav li:first-child a {
   color: black;
   font-weight: bold;
   text-decoration: none;
+  /*Pentru A Nu Se Mai Misca Pagina Cand Se Face Hover*/
+  box-sizing: border-box;
 }
 
 #content_motto a:hover {
