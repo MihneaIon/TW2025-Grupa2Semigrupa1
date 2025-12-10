@@ -150,3 +150,31 @@ table, tr, td{
 td, tr{
     padding: 4px;
 }
+
+footer{
+    height: 60px;
+    max-width: 100%;
+    background-color: #474747;
+    text-align: center;
+    padding-left: 35%;
+    padding-top: 8px;
+    border-radius: 20px;
+    
+}
+.linkul{
+    color: rgb(255, 255, 255);
+}
+.inapoi{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+.foot{
+    height: 30px;
+    text-align: center;
+}
+.foooter{
+    display: flex;
+    
+}
