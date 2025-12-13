@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW X5 - Detalii</title>
+    <link rel="stylesheet" href="./bmw-x5.css">
+</head>
+<body>
+    <header>
+        <h1>BMW X5</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Acasă</a></li>
+                <li><a href="../../index.html#cars">Mașini</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+        <div class="image-gallery">
+            <img src="bmw1.jpg" alt="BMW X5">
+            <img src="bmw2.jpg" alt="BMW X5 Side View">
+            <img src="bmw3.jpg" alt="BMW X5 Interior">
+        </div>
+        
+        <div class="car-details">
+            <h2>Specificații Tehnice</h2>
+            <p><strong>Motor:</strong> 3.0L Twin Turbo</p>
+            <p><strong>Putere:</strong> 340 CP</p>
+            <p><strong>Locuri:</strong> 5</p>
+            <p><strong>Transmisie:</strong> Automata</p>
+            <p><strong>Dotări:</strong> Navigație GPS, Sistem audio premium, Scaune Încălzite, Pilot automat adaptiv</p>
+        
+            <h2>Descriere</h2>
+            <p>BMW X5 este un SUV de lux care combină performanța impresionantă cu confortul și tehnologia de ultimă generație. Ideal pentru călătorii lungi și experiențe de neuitat.</p>
+        
+        </div>
+    </div>
+    
+    <div class="reservation-form-container">
+        <form action="rezervare.php" method="POST" class="reservation-form">
+            <h2>Rezervă acest model</h2>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            
+            <p>
+                <label for="start_date">Data de început:</label>
+                <input type="date" id="start_date" name="start_date" required>
+            </p>
+            
+            <p>
+                <label for="end_date">Data de sfârșit:</label>
+                <input type="date" id="end_date" name="end_date" required>
+            </p>
+            
+            <button type="submit" class="submit-button">Confirmă Rezervarea</button>
+        </form>
+    </div>
+</body>
+</html>

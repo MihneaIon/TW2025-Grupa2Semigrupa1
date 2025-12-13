@@ -538,18 +538,16 @@ footer {
 
 footer nav {
   height: fit-content;
-  width: 30%;
+  width: 40%;
 }
 
 footer nav div {
-  display: flex;
-  height: 35px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px;
   min-height: fit-content;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
   word-break: break-word;
+  justify-content: space-between;
 }
 
 footer nav a {

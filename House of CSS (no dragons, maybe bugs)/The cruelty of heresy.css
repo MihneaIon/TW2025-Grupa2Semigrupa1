@@ -1,0 +1,180 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Stilizare bara navigare*/
+.imagine{
+    width: 169px;
+    height: 46px;
+}
+.prima, .adoua, .navigare1, .navigare2, #conexiuni, #logare, h1, #cautare, .col{
+    display: inline;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+a:hover{
+    color: white;
+}
+#lista{
+    text-transform: uppercase;
+    background-color: #222;
+}
+
+.navigare1{
+    text-align: left;
+}
+.foto{
+    width: 30px;
+    height: 30px;
+}
+#logare{
+    text-align: right;
+}
+/*A doua bara de navigare*/
+
+.navigare3{
+    text-transform: uppercase;
+    background-color: #333333;
+    text-align: center;
+    word-spacing: 9px;
+}
+.atreia{
+    display: inline;
+}
+
+#lista2{
+    margin-top: -17px;
+}
+.fig{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 12px;
+}
+#panou{
+    color: white;
+    background-color: black;
+    margin-top: -16px;
+    min-height: 350px;
+    width: 100%;
+}
+#textpanou{
+    text-align: center;
+    padding-top: 90px;
+}
+#Ortho{
+    display: flex;
+    
+}
+.autor{
+    color: blue;
+    text-decoration: none;
+}
+.autor:hover{
+    text-decoration: underline;
+    color: blue;
+}
+#subtitlu{
+    text-align: center;
+}
+.butonas{
+    width: 22px;
+    height: 22px;
+}
+#titlupagina, #butoane{
+    display: inline-block;
+}
+.butt1:hover{
+    background-color: yellow;
+}
+.butt2:hover{
+    background-color: blue;
+}
+.butt3:hover{
+    background-color: red;
+}
+#tab1{
+    text-align: left;
+}
+.st{
+    padding-right: 60px;
+}
+#parteadreapta, #continutcontinuare{
+    display: inline-block;
+}
+.bo{
+    border: 3px solid black;
+    width: 400px;
+    margin: 4px;
+}
+.lin{
+    border-bottom: 2px solid darkgray;
+}
+.cent{
+    text-align: center;
+}
+#r, .re{
+    display: inline-block;
+}
+#sm{
+    width: 25%;
+    height: 10%;
+    background-color: blue;
+    color: white;
+}
+#cutie{
+    border-bottom: 2px solid black;
+}
+#formular{
+    border: 3px solid black;
+    border-radius: 6px;
+    margin: 6px;
+    padding: 6px;
+}
+#cancel{
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+#submit{
+    color: white;
+    background-color: rgb(7, 146, 7);
+    border-radius: 6px;
+}
+table, tr, td{
+    border: 2px black solid;
+}
+td, tr{
+    padding: 4px;
+}
+
+footer{
+    height: 60px;
+    max-width: 100%;
+    background-color: #474747;
+    text-align: center;
+    padding-left: 35%;
+    padding-top: 8px;
+    border-radius: 20px;
+    
+}
+.linkul{
+    color: rgb(255, 255, 255);
+}
+.inapoi{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+.foot{
+    height: 30px;
+    text-align: center;
+}
+.foooter{
+    display: flex;
+    
+}

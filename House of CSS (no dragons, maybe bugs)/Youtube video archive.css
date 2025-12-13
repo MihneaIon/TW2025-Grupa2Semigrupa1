@@ -9,6 +9,10 @@
 .prima, .adoua, .navigare1, .navigare2, #conexiuni, #logare, h1, #cautare, .col{
     display: inline;
 }
+
+#coloanastanga, #coldreapta{
+    display: inline-block;
+}
 a{
     color: gray;
     text-decoration: none;
@@ -65,7 +69,89 @@ a:hover{
     border-right: 0.2rem solid transparent;
 }
 
-#webcrawl{
+#webcrawl, .linc{
     color: blue;
+    
+}
+#webcrawl:hover{
+    color: red;
+}
+.linc:hover{
+    color: red;
+}
+#coldreapta{
+    width: 70%;
+}
+figure{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 12px;
+}
+.buton{
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+}
+#adv{
+    text-align: right;
+}
+#metadata, #adv{
+    display: inline;
+}
+#srt{
+    width: 100%;
+}
+.fi{
+    background-color: #494848;
+    width: 171px;
+    height: 147px;
+    margin: 7px;
+    border-radius: 12px;
+}
+.fic{
+    color: rgb(255, 255, 255);
+}
+.poz{
+    width: 121px;
+    height: 82px;
+}
+#aa{
+    color: blue;
+}
+.primalinie, .adoualinie, .atreialinie, .apatralinie{
+    display: inline-flex;
+}
+.fi:hover{
+    background-color: rgba(81, 87, 87, 0.415);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     
+}
+
+footer{
+    height: 60px;
+    max-width: 100%;
+    background-color: #474747;
+    text-align: center;
+    padding-left: 35%;
+    padding-top: 8px;
+    border-radius: 20px;
+    
+}
+.linkul{
+    color: rgb(255, 255, 255);
+}
+.inapoi{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+.foot{
+    height: 30px;
+    text-align: center;
+}
+.foooter{
+    display: flex;
     
 }
