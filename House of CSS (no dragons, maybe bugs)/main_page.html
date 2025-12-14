@@ -54,35 +54,216 @@ body{margin:0;font-family:Arial;background:#f4f4f4}
   .purple { background-color: #800080; }
   .soft-blue { background-color: #87CEEB; }
   .dark-blue { background-color: #00008B; }
+  #antet {
+            width: 100%;
+        }
 
+        #lista {
+            text-transform: uppercase;
+            background-color: #222;
+            color: white;
+            padding: 5px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #continut {
+            width: 100%;
+        }
+
+        .navigare1, .navigare2 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .prima, .adoua {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        #conexiuni { display: flex; align-items: center; }
+        #logare { display: flex; align-items: center; }
+        #cautare { display: flex; align-items: center; margin-right: 20px;}
+
+        .imagine { width: 169px; height: 46px; vertical-align: middle; }
+        .foto { width: 30px; height: 30px; }
+        
+        figure {
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        figcaption {
+            font-size: 10px;
+            color: #ccc;
+            margin-top: 2px;
+        }
+
+        a { color: gray; text-decoration: none; }
+        a:hover { color: white; }
+
+        #lista2 {
+            background-color: #333333;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .navigare3 {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .atreia {
+            display: inline;
+            margin: 0 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        input[type="search"] {
+            padding: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 80vh;
+        }
+
+        .left {
+            flex: 1;
+            min-width: 300px;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+
+        .right {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        footer {
+            background: #3e3e3e;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        footer a {
+            font-size: 12px;
+            color: #ccc;
+        }
 </style>
 </head>
 <body>
-<div class="topnav">
-    <a href="#"> <img src="./img_1.svg" width="30" height="30" class="topnav_image"> WEB</a>
-    <a href="#"> <img src="./img_2.svg" width="30" height="30" class="topnav_image"> TEXTS</a>
-    <a href="#"> <img src="./img_3.svg" width="30" height="30" class="topnav_image"> VIDEO</a>
-    <a href="#"> <img src="./img_4.svg" width="30" height="30" class="topnav_image"> AUDIO</a>
-    <a href="#"> <img src="./img_7.svg" width="30" height="30" class="topnav_image"> SOFTWARE</a>
-    <a href="#"> <img src="./img_6.svg" width="30" height="30" class="topnav_image"> IMAGES</a>
-</div>
-<div class="subnav">
-    <a href="#">ABOUT</a>
-    <a href="#">BLOG</a>
-    <a href="#">EVENTS</a>
-    <a href="#">PROJECTS</a>
-    <a href="#">HELP</a>
-    <a href="#">DONATE</a>
-    <a href="#">CONTACT</a>
-    <a href="#">JOBS</a>
-    <a href="#">VOLUNTEER</a>
-</div>
+<div id="antet">
+        <div id="continut">
+            <div id="lista">
+                <div id="conexiuni">
+                    <ul class="navigare1">
+                        <li class="prima"><a href="https://archive.org/"><img src="./continut Youtube video archive/logo.png" class="imagine" alt="Archive Logo"></a></li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://web.archive.org/"><img src="./continut Youtube video archive/web logo.png" class="foto"></a>
+                                <figcaption>Web</figcaption>
+                            </figure>    
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/texts"><img src="./continut Youtube video archive/text logo.png" class="foto"></a>
+                                <figcaption>Text</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/movies"><img src="./continut Youtube video archive/video logo.png" class="foto"></a>
+                                <figcaption>Movies</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/audio"><img src="./continut Youtube video archive/audio logo.png" class="foto"></a>   
+                                <figcaption>Audio</figcaption> 
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/software"><img src="./continut Youtube video archive/software.png" class="foto"></a>
+                                <figcaption>Software</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/image"><img src="./continut Youtube video archive/images.png" class="foto"></a>
+                                <figcaption>Images</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="logare">
+                    <ul class="navigare2">
+                        <li class="adoua">
+                            <figure>
+                                <img src="./continut Youtube video archive/icon.png" class="foto"> 
+                                <figcaption><a href="https://archive.org/account/signup">Sign up</a></figcaption>
+                            </figure>
+                        </li>
+                        <li class="adoua" style="margin-top: -15px;"><a href="https://archive.org/account/login">Login</a></li>
+                        <li class="adoua">
+                            <figure>
+                                <img src="./continut Youtube video archive/images.png" class="foto">
+                                <figcaption><a href="https://archive.org/create">Upload</a></figcaption>
+                            </figure>    
+                        </li>
+                    </ul>
+                </div>
 
+                <div id="cautare">
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div id="lista2">
+                <ul class="navigare3">
+                    <li class="atreia"><a href="https://archive.org/about/">About</a></li>
+                    <li class="atreia"><a href="https://blog.archive.org/">Blog</a></li>
+                    <li class="atreia"><a href="https://archive.org/events">Events</a></li>
+                    <li class="atreia"><a href="https://archive.org/projects/">Projects</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/faqs.php">Help</a></li>
+                    <li class="atreia"><a href="https://archive.org/donate">Donate</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/contact">Contact</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/jobs">Jobs</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/volunteer-positions">Volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="headerbox">
     <h4>Search the history of more than 1 trillion web pages on the Internet.</h4>
 <br>
 <div class="searchbox">
-    <img src="./logo.png" width="128" height="72">
+    <img src="./continut main page/logo.png" width="128" height="72">
     <input placeholder="Search the Wayback Machine">
 
 <button>Search</button>
@@ -92,7 +273,7 @@ body{margin:0;font-family:Arial;background:#f4f4f4}
 <div class="columns-container">
   <div class="column">
     <div class="column-content">
-      <img src="./logo_icon.svg" width="140" height="140">
+      <img src="./continut main page/logo_icon.svg" width="140" height="140">
       <p>Celebrate 1 trillion <br> web pages archived!</p>
     </div>
   </div>
@@ -100,15 +281,15 @@ body{margin:0;font-family:Arial;background:#f4f4f4}
   <div class="column">
     <div class="column-content">
       <h2>Internet Archive is a non-profit library of millions of free texts, movies, software, music, websites, and more.</h2>
-      <img src="./img_1.svg" width="30" height="30" class="yellow">
-      <img src="./img_2.svg" width="30" height="30" class="orange">
-      <img src="./img_3.svg" width="30" height="30" class="red">
-      <img src="./img_4.svg" width="30" height="30" class="blue">
-      <img src="./img_5.svg" width="30" height="30" class="red">
-      <img src="./img_6.svg" width="30" height="30" class="green">
-      <img src="./img_7.svg" width="30" height="30" class="purple">
-      <img src="./img_8.svg" width="30" height="30" class="soft-blue">
-      <img src="./img_9.svg" width="30" height="30" class="blue">
+      <img src="./continut main page/img_1.svg" width="30" height="30" class="yellow">
+      <img src="./continut main page/img_2.svg" width="30" height="30" class="orange">
+      <img src="./continut main page/img_3.svg" width="30" height="30" class="red">
+      <img src="./continut main page/img_4.svg" width="30" height="30" class="blue">
+      <img src="./continut main page/img_5.svg" width="30" height="30" class="red">
+      <img src="./continut main page/img_6.svg" width="30" height="30" class="green">
+      <img src="./continut main page/img_7.svg" width="30" height="30" class="purple">
+      <img src="./continut main page/img_8.svg" width="30" height="30" class="soft-blue">
+      <img src="./continut main page/img_9.svg" width="30" height="30" class="blue">
       <br>
         <div class="searchbox">
             <input placeholder="Search the Wayback Machine">
@@ -140,114 +321,119 @@ body{margin:0;font-family:Arial;background:#f4f4f4}
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_1.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_1.svg" width="50" height="50" style="margin-bottom: 5px;">
       Audio Books & Poetry
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       76,089 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_2.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_2.svg" width="50" height="50" style="margin-bottom: 5px;">
       LibriVox Audiobooks
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       21,025 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_3.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_3.svg" width="50" height="50" style="margin-bottom: 5px;">
       APK Archive
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       122,404 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_4.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_4.svg" width="50" height="50" style="margin-bottom: 5px;">
       Folksoundomy
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       1,060,252 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_5.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_5.svg" width="50" height="50" style="margin-bottom: 5px;">
       Phone Software
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       208,714 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_6.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_6.svg" width="50" height="50" style="margin-bottom: 5px;">
       Live Music Archive
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       292,778 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_7.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_7.svg" width="50" height="50" style="margin-bottom: 5px;">
       Arts & Music
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       11,547 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_8.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_8.svg" width="50" height="50" style="margin-bottom: 5px;">
       Electric Sheep
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       823 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./img_9.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/img_9.svg" width="50" height="50" style="margin-bottom: 5px;">
       Kodi Archive
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       44,670 ITEMS
     </div>
   </div>
   
   <div style="width: 120px;">
     <div style="color:white; background: rgb(105, 105, 105); width: 110px; height: 120px; display: grid; place-items: center; text-align: center; padding: 5px;">
-      <img src="./server_icon.svg" width="50" height="50" style="margin-bottom: 5px;">
+      <img src="./continut main page/server_icon.svg" width="50" height="50" style="margin-bottom: 5px;">
       Archive Books
     </div>
     <div style="color:white; background: rgb(61, 61, 61); width: 120px; height: 60px; display: grid; place-items: center; text-align: center;">
-      <img src="./server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
+      <img src="./continut main page/server_icon.svg" width="25" height="25" style="margin-bottom: 2px;">
       4,973,259 ITEMS
     </div>
   </div>
   
 </div>
 </body>
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background: #3e3e3e; border-top: 1px solid #ddd; text-align: center; padding: 8px 0;">
+  <a href="" style="font-size: 12px; color: #ffffff; text-decoration: none;">
+    Terms of Service (last updated 12/31/2014)
+  </a>
+</footer>
 </html>

@@ -1,95 +1,263 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{margin:0;font-family:Arial;background:#f4f4f4}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Archive</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
 
-.topnav, .subnav {
-  background: #282828;
-  padding: 10px;
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-}
+        #antet {
+            width: 100%;
+        }
 
-.topnav {
-  justify-content: flex-start;
-}
-.subnav{
-    background:#555555;margin-top:4px
-}
-.topnav a, .subnav a{text-decoration:none;color:#ffffff;font-size:15px;}
-.container {
-    display: flex;
-    gap: 20px;
-    padding-left: 300px;
-    padding-right: 200px;
-}
+        #lista {
+            text-transform: uppercase;
+            background-color: #222;
+            color: white;
+            padding: 5px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-</style>
+        #continut {
+            width: 100%;
+        }
+
+        .navigare1, .navigare2 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .prima, .adoua {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        #conexiuni { display: flex; align-items: center; }
+        #logare { display: flex; align-items: center; }
+        #cautare { display: flex; align-items: center; margin-right: 20px;}
+
+        .imagine { width: 169px; height: 46px; vertical-align: middle; }
+        .foto { width: 30px; height: 30px; }
+        
+        figure {
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        figcaption {
+            font-size: 10px;
+            color: #ccc;
+            margin-top: 2px;
+        }
+
+        a { color: gray; text-decoration: none; }
+        a:hover { color: white; }
+
+        #lista2 {
+            background-color: #333333;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .navigare3 {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .atreia {
+            display: inline;
+            margin: 0 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        input[type="search"] {
+            padding: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 80vh;
+        }
+
+        .left {
+            flex: 1;
+            min-width: 300px;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+
+        .right {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        footer {
+            background: #3e3e3e;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        footer a {
+            font-size: 12px;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-<div class="topnav">
-    <a href="#"> <img src="./img_1.svg" width="30" height="30" class="topnav_image"> WEB</a>
-    <a href="#"> <img src="./img_2.svg" width="30" height="30" class="topnav_image"> TEXTS</a>
-    <a href="#"> <img src="./img_3.svg" width="30" height="30" class="topnav_image"> VIDEO</a>
-    <a href="#"> <img src="./img_4.svg" width="30" height="30" class="topnav_image"> AUDIO</a>
-    <a href="#"> <img src="./img_7.svg" width="30" height="30" class="topnav_image"> SOFTWARE</a>
-    <a href="#"> <img src="./img_6.svg" width="30" height="30" class="topnav_image"> IMAGES</a>
-</div>
-<div class="subnav">
-    <a href="#">ABOUT</a>
-    <a href="#">BLOG</a>
-    <a href="#">EVENTS</a>
-    <a href="#">PROJECTS</a>
-    <a href="#">HELP</a>
-    <a href="#">DONATE</a>
-    <a href="#">CONTACT</a>
-    <a href="#">JOBS</a>
-    <a href="#">VOLUNTEER</a>
-</div>
-<div class="container">
-<div class="left"><h2>News [more]</h2> <br>
-Prominent South African online shop shuts down<br><br>
-Poynter, IRE and Internet Archive launch ‘Today’s News for Tomorrow,’ a project to help newsrooms preserve their digital footprint<br><br>
-The Wayback Machine recently captured its trillionth web page – here are 5 surprising facts about the 'living history of the internet'<br><br>
-In Westlaw Copyright Dispute, Legal Tech Backs ROSS While Media Groups Back Thomson Reuters<br><br>
-The Radicalization of Ziz Lasota: How an AI Doomer Became an Accused Cult Leader<br><br>
-Poynter, IRE and Internet Archive launch ‘Today’s News for Tomorrow,’ a project to help newsrooms preserve their digital footprint<br><br>
-White House Media Attack Falls Apart After It Calls Fox ‘Woke’<br><br>
-Starmer insists Reeves did not mislead public, as OBR explains Budget day publishing error<br><br>
-WordPress flaw led to early release of OBR forecasts<br><br>
-OBR report says Budget leak error also led to early Spring Statement access</div>
-<div class="right"><h1>Volunteer Positions</h1>
-We could always use a hand- we can't ensure universal access to all knowledge without your help. Whether it's helping Open Library update their UI, setting up A/V equipment at Internet Archive events, or helping the Wayback Machine archive even more of the internet, you will have a permanent impact on our goal of free access to all information for everyone.
-<br><br>
-When you volunteer for the Internet Archive, you get behind-the-scenes access to a non-profit workplace with a big mission. You'll get to work with a wide variety of people, ranging from Archive staff to fellow volunteers from all walks of life. You'll be able to refine your networking, event planning, and team building skills while having fun, meeting new people, and attending Archive events.
-<br><br>
-<h1>Volunteer as an Open Library Developer</h1>
-Learn how to contribute, find easy tasks, look at our roadmap, and ask to join our community slack chat!
-<br><br>
-Getting Started with our Github 
-<br><br>
-Good First Issues
-<br><br>
-Join the Open Library Slack Channel
-<br><br>
+    <div id="antet">
+        <div id="continut">
+            <div id="lista">
+                <div id="conexiuni">
+                    <ul class="navigare1">
+                        <li class="prima"><a href="https://archive.org/"><img src="./continut Youtube video archive/logo.png" class="imagine" alt="Archive Logo"></a></li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://web.archive.org/"><img src="./continut Youtube video archive/web logo.png" class="foto"></a>
+                                <figcaption>Web</figcaption>
+                            </figure>    
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/texts"><img src="./continut Youtube video archive/text logo.png" class="foto"></a>
+                                <figcaption>Text</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/movies"><img src="./continut Youtube video archive/video logo.png" class="foto"></a>
+                                <figcaption>Movies</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/audio"><img src="./continut Youtube video archive/audio logo.png" class="foto"></a>   
+                                <figcaption>Audio</figcaption> 
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/software"><img src="./continut Youtube video archive/software.png" class="foto"></a>
+                                <figcaption>Software</figcaption>
+                            </figure>
+                        </li>
+                        <li class="prima">
+                            <figure>
+                                <a href="https://archive.org/details/image"><img src="./continut Youtube video archive/images.png" class="foto"></a>
+                                <figcaption>Images</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="logare">
+                    <ul class="navigare2">
+                        <li class="adoua">
+                            <figure>
+                                <img src="./continut Youtube video archive/icon.png" class="foto"> 
+                                <figcaption><a href="https://archive.org/account/signup">Sign up</a></figcaption>
+                            </figure>
+                        </li>
+                        <li class="adoua" style="margin-top: -15px;"><a href="https://archive.org/account/login">Login</a></li>
+                        <li class="adoua">
+                            <figure>
+                                <img src="./continut Youtube video archive/images.png" class="foto">
+                                <figcaption><a href="https://archive.org/create">Upload</a></figcaption>
+                            </figure>    
+                        </li>
+                    </ul>
+                </div>
 
-<h1>Volunteering as an Open Librarian</h1>
-Want to make sure Open Library's data is pristine?
-<br><br>
-Learn about our standards
-<br><br>
-Write bots to merge and fix catalog records
-<br><br>
-<h1>Volunteer at Special Events</h1>
-Would you like to help the Internet Archive out with some of our events?
-<br><br>
-Volunteers are essential during our special events. We host around 30+ events annually, and volunteers provide crucial support by engaging with guests, assisting with set-up and break down, A/V support, and other exciting opportunities. Volunteers are expected to be punctual and reliable and be flexible and cooperative with staff, guests, and other volunteers. The majority of our events are held in the San Francisco Bay Area, mostly at our headquarters in San Francisco.
-<br><br>
-[ Due to COVID-19 closures, we are temporarily suspending Special Event Volunteer applications. Please check back with us soon! ]
-</div>
+                <div id="cautare">
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div id="lista2">
+                <ul class="navigare3">
+                    <li class="atreia"><a href="https://archive.org/about/">About</a></li>
+                    <li class="atreia"><a href="https://blog.archive.org/">Blog</a></li>
+                    <li class="atreia"><a href="https://archive.org/events">Events</a></li>
+                    <li class="atreia"><a href="https://archive.org/projects/">Projects</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/faqs.php">Help</a></li>
+                    <li class="atreia"><a href="https://archive.org/donate">Donate</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/contact">Contact</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/jobs">Jobs</a></li>
+                    <li class="atreia"><a href="https://archive.org/about/volunteer-positions">Volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h2>News [more]</h2> 
+            <p><strong>Prominent South African online shop shuts down</strong></p>
+            <p>Poynter, IRE and Internet Archive launch ‘Today’s News for Tomorrow,’ a project to help newsrooms preserve their digital footprint</p>
+            <p>The Wayback Machine recently captured its trillionth web page – here are 5 surprising facts about the 'living history of the internet'</p>
+            <p>In Westlaw Copyright Dispute, Legal Tech Backs ROSS While Media Groups Back Thomson Reuters</p>
+            <p>The Radicalization of Ziz Lasota: How an AI Doomer Became an Accused Cult Leader</p>
+            <p>White House Media Attack Falls Apart After It Calls Fox ‘Woke’</p>
+            <p>Starmer insists Reeves did not mislead public, as OBR explains Budget day publishing error</p>
+        </div>
+
+        <div class="right">
+            <h1>Volunteer Positions</h1>
+            <p>We could always use a hand- we can't ensure universal access to all knowledge without your help. Whether it's helping Open Library update their UI, setting up A/V equipment at Internet Archive events, or helping the Wayback Machine archive even more of the internet, you will have a permanent impact on our goal of free access to all information for everyone.</p>
+            <p>When you volunteer for the Internet Archive, you get behind-the-scenes access to a non-profit workplace with a big mission. You'll get to work with a wide variety of people, ranging from Archive staff to fellow volunteers from all walks of life.</p>
+            
+            <h1>Volunteer as an Open Library Developer</h1>
+            <p>Learn how to contribute, find easy tasks, look at our roadmap, and ask to join our community slack chat!</p>
+            <ul>
+                <li>Getting Started with our Github</li>
+                <li>Good First Issues</li>
+                <li>Join the Open Library Slack Channel</li>
+            </ul>
+
+            <h1>Volunteering as an Open Librarian</h1>
+            <p>Want to make sure Open Library's data is pristine?</p>
+            <ul>
+                <li>Learn about our standards</li>
+                <li>Write bots to merge and fix catalog records</li>
+            </ul>
+
+            <h1>Volunteer at Special Events</h1>
+            <p>Would you like to help the Internet Archive out with some of our events?</p>
+            <p>[ Due to COVID-19 closures, we are temporarily suspending Special Event Volunteer applications. Please check back with us soon! ]</p>
+        </div>
+    </div>
+
+    <footer>
+      <a href="#">Terms of Service (last updated 12/31/2014)</a>
+    </footer>
+
 </body>
 </html>
