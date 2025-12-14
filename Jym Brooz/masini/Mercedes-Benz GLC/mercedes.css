@@ -37,16 +37,6 @@
 .submit-button:hover {
     background: #555;
 }
- /* .contact {
- position: fixed;
-  bottom: 0%;
-  width: 100%;
-  text-align: center;
-  padding: 0 0;
-  color: white;
-  font-size: 16px;
-  background: rgba(0, 0, 0, 0.596);
-  }      */
 
    footer {
     background: #333;
@@ -54,6 +44,7 @@
     padding: 15px 0;
     text-align: center; 
 }
+
 .reservation-form input[type="email"],
 .reservation-form input[type="date"] {
     flex: 2; 
@@ -63,6 +54,7 @@
     width: 100%; 
     box-sizing: border-box;
 }
+
 .detalii {
     max-width: 450px;
     text-align: center; 
@@ -79,6 +71,7 @@
     line-height: 1.5;
     text-align: center; 
 }
+
 .reservation-form-container {
     max-width: 500px; 
     margin: 40px auto; 
@@ -107,6 +100,7 @@
     font-weight: bold;
     color: #555;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -134,4 +128,22 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.submit-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.submit-button:hover {
+    background: #555;
 }

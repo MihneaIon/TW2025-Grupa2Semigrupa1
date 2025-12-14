@@ -1,14 +1,19 @@
 
 #Video {
   position: fixed;
-  right: 0;
+  align-items: center;
+  top: 0;
+  left: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  right: 0;
+  display: table;
+  margin-inline: auto;
+      max-width: 100%;
+  height: auto;
 }
 .text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -28,9 +33,10 @@
   text-decoration: underline;
 }
 .contact {
- position: fixed;
+  position: fixed;
   bottom: 0%;
   width: 100%;
+  left: 0%;
   text-align: center;
   padding: 0 0;
   color: white;

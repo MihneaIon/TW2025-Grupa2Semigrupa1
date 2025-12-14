@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Închirieri Auto</title>
-    <link rel="stylesheet" href="../Jym Brooz/style.css">
+    <link rel="stylesheet" href="index.css">
     <!-- am adaugat faviconuri pentru paginile html -->
    <link rel="icon" type="image/x-icon" href="./Red-Neon-Hexagon-png-removebg-preview.png">
 
 </head>
 <body>
    <header>
-        <a href="index.html">
+        <a href="index.css">
             <div class="header-background">
         <h1>Închirieri Auto</h1>
         <nav>
@@ -24,13 +24,28 @@
     </div>
 </a>
     </header>
-    <audio controls autoplay loop>
-  <source src="" type="audio/ogg">
-  <source src="" type="audio/mpeg">
-
+    <!-- Pentru ca audio sa functioneze, in browser, la Settings, Privacy and security, Site settings,
+    Additional content settings, Sound, Allowed to play sound, Add si adauga URL-ul acestei pagini dupa ce o deschizi -->
+    <audio controls autoplay loop id="myaudio">
+  <source src="amazing-plan.ogg" type="audio/ogg">
+  <source src="amazing-plan.mp3" type="audio/mpeg">
+  Browser-ul tau nu suporta elementul audio al paginii.
 </audio>
+<script>
+let vid = document.getElementById("myaudio");
 
-
+function getVolume() { 
+  alert(audio.volume);
+} 
+  
+function setHalfVolume() { 
+  audio.volume = 0.1;
+} 
+  
+function setFullVolume() { 
+  audio.volume = 0.5;
+} 
+</script> 
     <section id="home">
         <h2>Bun venit la serviciul nostru de închirieri auto! Alege mașina potrivită pentru tine!</h2>
     </section>
@@ -70,19 +85,19 @@
                 <img src="imagini/car1.jpg" alt="Mașină 1">
                 <p>Model: BMW X5</p>
                 <p>Preț: 210 lei/zi</p>
-                <a href="./bmw-x5.html/bmw-x5.html" class="car-button">Rezervă</a>
+                <a href="masini/BMW X5/bmw-x5.html" class="car-button">Rezervă</a>
             </div>
             <div class="car">
                 <img src="imagini/car2.jpg" alt="Mașină 2">
-                <p>Model: Audi q6</p>
+                <p>Model: Audi Q6</p>
                 <p>Preț: 190 lei/zi</p>
-                <a href="masini/audi q6/audiq6.html" class="car-button">Rezervă</a>
+                <a href="masini/Audi q6/audi-q6.html" class="car-button">Rezervă</a>
             </div>
             <div class="car">
                 <img src="imagini/car3.jpg" alt="Mașină 3">
                 <p>Model: Mercedes-Benz GLC</p>
                 <p>Preț: 220 lei/zi</p>
-                <a href="./Mercedes-Benz GLC/Mercedes-Benz GLC.html" class="car-button">Rezervă</a>
+                <a href="masini/Mercedes-Benz GLC/Mercedes-Benz GLC.html" class="car-button">Rezervă</a>
             </div>
             <div class="car">
                 <img src="imagini/car4.jpg" alt="Mașină 4">
@@ -127,9 +142,9 @@
             </div>
             <div class="car">
                 <img src="imagini/car6.jpg" alt="Mașină 6">
-                <p>Model: Audi a6</p>
+                <p>Model: Audi A6</p>
                 <p>Preț: 180 lei/zi</p>
-                <a href="masini/Audi a6/Audi a6.html" class="car-button">Rezervă</a>
+                <a href="masini/Audi A6/Audi A6.html" class="car-button">Rezervă</a>
             </div>
             <div class="car">
                 <img src="imagini/car7.jpg" alt="Mașină 7">
@@ -177,7 +192,7 @@
                 <img src="imagini/car17.jpg" alt="Mașină 17">
                 <p>Model: BMW Z4</p>
                 <p>Preț: 330 lei/zi</p>
-                <a href="masini/z4/z4.html" class="car-button">Rezervă</a>
+                <a href="masini/Z4/Z4.html" class="car-button">Rezervă</a>
             </div>
             <div class="car">
                 <img src="imagini/car18.jpg" alt="Mașină 18">
