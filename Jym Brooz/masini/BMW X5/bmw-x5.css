@@ -99,6 +99,7 @@ footer {
 }
 
 .reservation-form label {
+    text-align: left;
     flex: 1; 
     font-weight: bold;
     color: #555;

@@ -1,32 +1,36 @@
 
 #Video {
-  position: fixed;
-  align-items: center;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: table;
-  margin-inline: auto;
-      max-width: 100%;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
 }
 .text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .text h1 {
   font-size: 60px;
-  margin: 0;
+  margin: 15px;
 }
 .text a {
-  font-size: 20px;
-  color:rgb(226, 58, 29) ;
+  font-size: 30px;
+  color:rgb(241, 88, 27) ;
   text-decoration: none;
 }
 .text a:hover{
