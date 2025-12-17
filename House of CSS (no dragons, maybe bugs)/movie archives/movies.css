@@ -199,20 +199,13 @@ ul {
 li {
   margin-bottom: 5px;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
-}
-
 .item {
   background-color: white;
   padding: 15px;
   border: 1px solid #ccc;
   text-align: center;
-  transition: 0.2s ease;
+   width:250px;
+  height:300px;
 }
 
 .item:hover {
@@ -221,9 +214,9 @@ li {
 }
 
 .item img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 12px;
+  width: 100px;
+  height: 100px;
+ margin:auto;
 }
 
 .item-title {
@@ -248,3 +241,15 @@ footer a {
             font-size: 12px;
             color: #ccc;
         }
+.all{
+  display:flex;
+  gap:20px;
+}
+.left{
+  width: 250px;
+}
+.right{
+  display:flex;
+  flex-wrap:wrap;
+ gap:5px;
+}
