@@ -1,0 +1,172 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+/*Header*/
+#header{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #272727;
+    justify-content: center;
+    gap: 500px;
+}
+
+#header-stanga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-dreapta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-text-header{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Inapoi*/
+#inapoi{
+    width: 100%;
+    height: 30px;
+    background-color: #D9AF3F;
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+#link-inapoi{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+
+
+
+
+
+/* Formular Stanga */
+
+#formular-stanga{
+    
+    display: flex;
+    min-height: 800;
+    min-width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%; 
+    flex-direction: column;
+    background-color: white;
+    
+}
+.element-stanga {
+    width: 80%;
+    padding: 10px;
+    
+}
+input,label{
+    display: block;
+}
+#nume-prenume{
+    display: flex;
+}
+input{
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+#creare-cont{
+    background-color: #D9AF3F;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+
+
+/* Formular Dreapta */
+
+
+
+#formular-dreapta{
+    display: flex;
+    min-height: 800;
+    min-width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%; 
+    flex-direction: column;
+    background-image: url(imagini_autentificare/fundal);
+    color: white;
+    
+}
+.element-dreapta{
+    width: 80%;
+    padding: 10px;
+}
+input,label{
+    display: block;
+}
+.element-dreapta>input{
+    border: 0px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+
+label::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+#intra-cont{
+    background-color: #D9AF3F;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+#creare-cont{
+    background-color: #D9AF3F;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+#reseteaza-parola{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+

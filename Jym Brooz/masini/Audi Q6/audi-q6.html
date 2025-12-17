@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Audi Q5 - Detalii</title>
+    <link rel="stylesheet" href="audi-q6.css">
+</head>
+<body>
+    <header>
+        <h1>Audi Q5</h1>
+        <nav>
+            <ul>
+                <li><a href="../../acasa.html">Acasă</a></li>
+                <li><a href="../../index.html">Mașini</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="image-gallery">
+                <img src="audi1.jpg" alt="audi ">
+                <img src="audi2.jpg" alt="audi q5 Side View">
+                <img src="audi3.jpg" alt="audi q5 Interior">
+            </div>
+            
+            <div class="car-details">
+                <h2>Specificații Tehnice</h2>
+                <p><strong>Motor:</strong> 2.0 L TFSI</p>
+                <p><strong>Putere:</strong> 245 CP</p>
+                <p><strong>Locuri:</strong> 5</p>
+                <p><strong>Transmisie</strong> Automata</p>
+                <p><strong>Dotări:</strong> Navigație GPS, Sistem audio Harman Kardon, Scaune Încălzite, Pilot automat adaptiv, Cruise control</p>
+        
+                <h2>Descriere</h2>
+                <p>Audi Q5 este un SUV perfect pentru familie care combină confortul cu tehnologia de ultimă generație. Este o masina ideala pentru oras de familie.</p>
+                <div class="reservation-form-container">
+        <form action="rezervare.php" method="POST" class="reservation-form">
+            <h2>Rezervă acest model</h2>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            
+            <p>
+                <label for="start_date">Data de început:</label>
+                <input type="date" id="start_date" name="start_date" required>
+            </p>
+            
+            <p>
+                <label for="end_date">Data de sfârșit:</label>
+                <input type="date" id="end_date" name="end_date" required>
+            </p>
+            
+            <button type="submit" class="submit-button">Confirmă Rezervarea</button>
+        </form>
+    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Închirieri Auto</p>
+    </footer>
+</body>
+</html>

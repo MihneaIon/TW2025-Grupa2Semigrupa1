@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="autentificare.css">
+</head>
+
+
+
+<body>
+    <!--Header-->
+    <div id="header">
+        <div id="header-stanga">
+            <a href=""><img src="imagini_autentificare/menu.png" alt=""></a>
+            <a href="" class="link-text-header">Adauga Adresa</a>
+        </div>
+        <div id="header-centru">
+            <a href=""><img src="imagini_autentificare/logo.png" alt=""></a>
+        </div>
+        <div id="header-dreapta">
+            <a href="" class="link-text-header">AUTENTIFICARE</a>
+            <a href=""><img src="imagini_autentificare/cos.png" alt=""></a>
+        </div>
+    </div>
+
+    <!--Inapoi-->
+    <div id="inapoi">
+        <a href="" id="link-inapoi"><i class="arrow left"></i>Inapoi</a>
+    </div>
+
+    <!--Main-->
+    <div id="main">
+        <!--Formular Stanga-->
+        <div id="formular-stanga">
+            <div><h1>Creare Cont</h1></div>
+            <form action="">
+                <div class="element-stanga" id="nume-prenume">
+                    <div><label for="nume" id="nume">Nume</label>
+                    <input type="text" name="nume" id="nume" required></div>
+                    <div><label for="prenume" id="prenume">Prenume</label>
+                    <input type="text" name="prenume" id="prenume" required></div>
+                    
+                </div>
+                <div class="element-stanga">
+                    <label for="telefon">Nr telefon</label>
+                    <input type="tel" name="telefon" id="telefon" required>
+                </div>
+                <div class="element-stanga">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="element-stanga">
+                    <label for="parola">Parola</label>
+                    <input type="password" name="parola" id="parola" required>
+                </div>
+                <div class="element-stanga">
+                    <label for="parola2">Confirma Parola</label>
+                    <input type="password" name="parola2" id="parola2" required>
+                </div>
+                    <div id="checknbox">
+                        <div class="element-stanga">
+                        <input type="checkbox" name="termani1" id="termeni1">
+                        <label for="termeni1">Sunt de acord cu Politica de confidențialitate</label>
+                    </div>
+                    <div class="element-stanga">
+                        <input type="checkbox" name="termani2" id="termeni2" >
+                        <label for="termeni2">Sunt de acord cu Termenii și condițiile</label>
+                    </div>
+
+                </div>
+                
+   
+            </form>
+
+            <div ><input type="submit" value="CREARE CONT" id="creare-cont"></div>
+
+        </div>
+
+        <!--Formular Dreapta-->
+        <div id="formular-dreapta">
+            <div><h1>Autentificare</h1></div>
+            <form action="">
+                <div class="element-dreapta">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="element-dreapta">
+                    <label for="parola">Parola</label>
+                    <input type="password" name="parola" id="parola" required>
+                </div>
+
+                
+            </form>
+            <div><input type="submit" value="INTRA IN CONT" id="intra-cont"></div>
+            <div><input type="submit" value="RESETARE PAROLA" id="reseteaza-parola"></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <header>
+  <div class="up">
+    <div class="logo"><a href="../main_page.html">🏛️ INTERNET ARCHIVE</a></div>
+
+    <div class="nav">
+      <a href="">WEB</a>
+      <a href="https://archive.org/details/texts">TEXTS</a>
+      <a href="https://archive.org/details/movies">VIDEO</a>
+      <a href="https://archive.org/details/audio">AUDIO</a>
+      <a href="https://archive.org/details/software">SOFTWARE</a>
+      <a href="https://archive.org/details/image">IMAGES</a>
+    </div>
+
+    <div class="user">
+      <a href="https://archive.org/account/signup">SIGN UP</a>
+      <a href="https://archive.org/login">LOG IN</a>
+      <a href="" class="upload">⬆ UPLOAD</a>
+
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button>🔍</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <a href="https://archive.org/about/">ABOUT</a>
+    <a href="https://blog.archive.org/">BLOG</a>
+    <a href="https://blog.archive.org/events/">EVENTS</a>
+    <a href="https://archive.org/projects/">PROJECTS</a>
+    <a href="https://help.archive.org/">HELP</a>
+    <a href="https://archive.org/donate?origin=iawww-TopNavDonateButton">DONATE ❤️</a>
+    <a href="https://archive.org/about/contact">CONTACT</a>
+    <a href="https://archive.org/about/jobs">JOBS</a>
+    <a href="../volunteer.html">VOLUNTEER</a>
+  </div>
+
+</header>
+
+<h1><img src="./oldicon.gif" height="40" width="40" alt="error"> Movie Archives</h1>
+<p>Watch full-length feature films, classic shorts, world culture documentaries, World War II propaganda, movie trailers, and films created in just ten hours: These options are all featured in this diverse library!</p>
+
+<hr>
+
+<table>
+  <tr>
+    <td ><b>COLLECTION</b></td>
+    <td >FORUM</td>
+    <td ><a href="https://archive.org/details/moviesandfilms?tab=about">ABOUT</a></td>
+    <td align="right">
+      <a href="">Share</a> |
+      <a href="">RSS</a> |
+      <a href="">Play All</a>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<form>
+  <input type="search" name="query" placeholder="Search this collection">
+  <input type="submit" value="Search this collection">
+  <br><br>
+  <label><input type="radio" name="stype" value="metadata"> Search metadata</label>
+  <label><input type="radio" name="stype" value="text"> Search text contents</label>
+</form>
+
+<p><b>103,492 Results</b></p>
+
+<hr>
+
+<h3>Filters</h3>
+
+<h4>Year Published</h4>
+<label for="yearStart">Choose</label>
+<input type="range" id="yearStart" name="yearStart" min="1" max="10198" value="1" oninput="startOutput.value = yearStart.value">
+<output id="startOutput">1</output>
+
+<h4>Part Of</h4>
+<ul>
+  <li><a href="https://archive.org/details/movies">Moving Image Archive</a></li>
+</ul>
+
+<h4>Media Type</h4>
+<ul>
+  <li><label><input type="checkbox" name="media" value="movies"> Movies (103,343)</label></li>
+  <li><label><input type="checkbox" name="media" value="data"> Data (52)</label></li>
+  <li><label><input type="checkbox" name="media" value="collection"> Collection (48)</label></li>
+  <li><label><input type="checkbox" name="media" value="audio"> Audio (29)</label></li>
+  <li><label><input type="checkbox" name="media" value="image"> Image (10)</label></li>
+  <li><label><input type="checkbox" name="media" value="texts"> Texts (8)</label></li>
+   <li><a href="">More...</a></li>
+</ul>
+
+ <h4>Year</h4>
+  <ul>
+    <li><label><input type="checkbox">  2019 <span >(2,146)</span></label></li>
+    <li><label><input type="checkbox">  2018 <span >(2,664)</span></label></li>
+    <li><label><input type="checkbox">  2017 <span >(2,782)</span></label></li>
+    <li><label><input type="checkbox">  2016 <span >(3,092)</span></label></li>
+    <li><label><input type="checkbox">  2015 <span >(2,858)</span></label></li>
+    <li><label><input type="checkbox">  2014 <span >(2,986)</span></label></li>
+    <li><a href="">More...</a></li>
+  </ul>
+
+  <h4>Subject</h4>
+  <ul>
+    <li><label><input type="checkbox">  Movie <span>(45,703)</span></label></li>
+    <li><label><input type="checkbox">  trailer <span>(30,549)</span></label></li>
+    <li><label><input type="checkbox">  Drama <span>(18,665)</span></label></li>
+    <li><label><input type="checkbox">  Trailer <span>(15,038)</span></label></li>
+    <li><label><input type="checkbox">  Horror <span>(9,116)</span></label></li>
+    <li><label><input type="checkbox">  movie <span>(5,225)</span></label></li>
+    <li><a href="">More...</a></li>
+  </ul>
+
+<hr>
+
+<div class="grid">
+  <div class="item">
+    <img src="./feature_films.jpg" alt="error">
+    <div class="item-title">Feature Films</div>
+    <div class="item-meta">
+      25,233 items · 63.4 terabytes
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="./feature_films_unsorted.jpg" alt="error">
+    <div class="item-title">Miscellaneous Feature Films</div>
+    <div class="item-meta">
+      15,407 items · 50.1 terabytes
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="./movie_trailers.jpg" alt="error">
+    <div class="item-title">Movie Trailers</div>
+    <div class="item-meta">
+      60,454 items · 8.1 terabytes
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="./movie_trailers_unsorted.jpg" alt="error">
+    <div class="item-title">Unsorted and Miscellaneous Movie Trailers</div>
+    <div class="item-meta">
+      57,999 items · 8 terabytes
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="./Comedy_Films.jpg" alt="error">
+    <div class="item-title">Comedy Films</div>
+    <div class="item-meta">
+      1,269 items · 2.7 terabytes
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="./Film_Noir.jpg" alt="error">
+    <div class="item-title">Film Noir</div>
+    <div class="item-meta">
+      1,711 items · 2.2 terabytes
+    </div>
+  </div>
+
+    <div class="item">
+    <img src="./short_films.jpg" alt="error">
+    <div class="item-title">Short Format Films</div>
+    <div class="item-meta">3,087 items · 1.5 terabytes</div>
+  </div>
+
+  <div class="item">
+    <img src="./SciFi_Horror.jpg" alt="error">
+    <div class="item-title">Sci-Fi / Horror</div>
+    <div class="item-meta">410 items · 1.1 terabytes</div>
+  </div>
+
+  <div class="item">
+    <img src="./silent_films.jpg" alt="error">
+    <div class="item-title">Silent Films</div>
+    <div class="item-meta">3,339 items · 2.7 terabytes</div>
+  </div>
+
+  <div class="item">
+    <img src="./colorized-movies.jpg" alt="error">
+    <div class="item-title">Colorized and Upscaled Movies</div>
+    <div class="item-meta">1,009 items · 2.4 terabytes</div>
+  </div>
+</div>
+<footer>
+    
+        <p><a href="https://archive.org/about/terms">Terms of Service (last updated 12/31/2014)</p>
+    
+        </footer>
+</body>
+</html>
